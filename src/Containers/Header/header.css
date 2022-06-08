@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navbar  {
+    background-color: #0000008c !important;
+    width: 4%;
+    transition: .3s ease-in-out;
+    position: sticky  ;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar .logo {
+  width: 100%;
+}
+
+.navbar ul li {
+    border-bottom: 1px  solid #606060;
+    background-color: transparent;
+    color: #fff;
+    padding-top: 30px ;
+    padding-bottom: 30px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar ul li:last-child {
+  border: none;
+}
+
+.navbar ul li span {
+  position: absolute;
+  right: -100%;
+  transition: .3s all;
+  visibility: hidden;
+}
+
+.navbar:hover { 
+  width: 15%;
+}
+
+.navbar:hover ul li span {
+  right: 10%;
+  visibility: visible;
