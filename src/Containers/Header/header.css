@@ -6,7 +6,7 @@
 }
 
 .navbar  {
-    background-color: #0000008c !important;
+    background-color: #000447  !important;
     width: 4%;
     transition: .3s ease-in-out;
     position: sticky  ;
@@ -16,6 +16,11 @@
 
 .navbar .logo {
   width: 100%;
+}
+
+.navbar .logo img {
+  width: 100%;
+  filter: invert(1);
 }
 
 .navbar ul li {
@@ -48,3 +53,4 @@
 .navbar:hover ul li span {
   right: 10%;
   visibility: visible;
+}
