@@ -2,11 +2,12 @@ import React from "react";
 // import Home from '../Home/index'
 import { Form, Button, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './dashboard.css'
+import './department.css'
 
-function Dashboard() {
+function Department() {
   return (
-    <div className="form_section m-auto ">
+    <main className="main_department">
+    <div className="form_department m-auto ">
       <Alert className="text-center fs-4 m-0   alertt">
         Departments
       </Alert>
@@ -38,8 +39,9 @@ function Dashboard() {
         </Button>
       </Form>
     </div>
+    </main>
 
   );
 }
 
-export default Dashboard;
+export default Department;

@@ -1,3 +1,13 @@
+.main_taxes{
+    width: 100%;
+     display: flex;
+     align-items: center;
+     background-image: url('../../assets/images/1.svg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: right;
+}
+
 .home_form {
     /* width: 30%; */
     height: fit-content;
@@ -10,15 +20,21 @@
 .home_form .alertt {
     background-color: #000447 !important;
     color: #fff;
+    border: none;
+    /* padding: 30px 0; */
+    border-radius: 3px 3px 0 0;
 }
 
 .home_form .form {
-    background-color: #ededef;
+    background-color: #c51203;
+    height: auto;
+    /* background-color: #ededef; */
+    /* background-color: #20617f; */
     /* height: 500px; */
     /* overflow: auto; */
 }
 
-/* .home_form .form::-webkit-scrollbar-thumb {
+.home_form .form::-webkit-scrollbar-thumb {
     background: #000447;
     border-radius: 10px 0 10px 0;
 }
@@ -26,18 +42,21 @@
 .home_form .form::-webkit-scrollbar {
     width: .7rem;
     background-color: none;
-} */
+}
 
 .home_form .form label {
     font-size: .7rem;
     font-weight: 500;
-    color: #000447;
+    color: #fff;
+    /* color: #000447; */
 }
 
 .home_form .form input,
 .home_form .form select {
     padding: 5px 10px;
     font-size: .7rem;
+    width: 100%;
+    color: #6c757d;
 }
 
 .home_form .form input:focus,
@@ -46,10 +65,10 @@
     border-color: #ced4da;
 }
 
-.home_form .form .form_btn {
+/* .home_form .form .form_btn {
     background-color: #000447;
     border: none;
-}
+} */
 
 
 /* .home_form .form .input_{
@@ -63,6 +82,74 @@
     width: 33%;
 }
 
+.home_form .form .Empid {
+    width: 15%;
+}
+
+.home_form .form .Empname {
+    width: 30%;
+}
+
+.home_form .form .Empidentity {
+    width: 20%;
+}
+.home_form .form .ContactNum {
+    width: 25%;
+}
+
+.home_form .form .Empdepartment {
+    width: 40%;
+}
+
+
+.home_form .form .Empdesignation {
+    width: 60%;
+}
+
+.home_form .form .Emergcontactperson {
+    width: 30%;
+}
+
+.home_form .form .Emergcontactnumber {
+    width: 30%;
+}
+
+
+.home_form .form .Empsalary {
+    width: 20%;
+}
+
+
+.home_form .form .Yearsalary {
+    width: 20%;
+}
+
+
+.home_form .form .Taxslab {
+    width: 15%;
+}
+
+
+.home_form .form .Taxpercentage {
+    width: 15%;
+}
+
+.home_form .form .Taxamount {
+    width: 20%;
+}
+
+
+.home_form .form .Leaveincashment {
+    width: 30%;
+}
+
+/* .home_form .form .Empid,
+.home_form .form .Empname,
+.home_form .form .Empidentity{
+    width: 33%;
+} */
+
+/* 
 .home_form .form .Empid,
 .home_form .form .ContactNum,
 .home_form .form .Empsalary,
@@ -90,4 +177,4 @@
 
 .home_form .form  {
     width: 100%;
-}
+} */
