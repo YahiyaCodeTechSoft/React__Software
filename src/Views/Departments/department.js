@@ -7,7 +7,7 @@ import './department.css'
 function Department() {
   return (
     <main className="main_department">
-    <div className="form_department m-auto ">
+    <div className="form_department m-auto w-50">
       <Alert className="text-center fs-4 m-0   alertt">
         Departments
       </Alert>

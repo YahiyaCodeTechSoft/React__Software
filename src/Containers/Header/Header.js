@@ -18,9 +18,10 @@ function Navigation() {
         {/* <ListGroup.Item as='li'><Link to="/"> <i className="fa-solid fa-house-chimney"></i><span> Home </span></Link></ListGroup.Item> */}
         {/* <ListGroup.Item as='li'><Link to="/dashboard"> <i className="fa-solid fa-house-chimney"></i><span> Dashboard </span></Link></ListGroup.Item> */}
         {/* <ListGroup.Item as='li'><Link to="/"> <i className="fa-solid fa-house-chimney"></i><span> Home </span></Link></ListGroup.Item> */}
-      <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-house-chimney"></i> <span> Employee  </span> </NavLink></ListGroup.Item>
-        <ListGroup.Item as='li'><NavLink to="/department"><i className="fa-solid fa-house-chimney"></i> <span> Departments </span> </NavLink></ListGroup.Item>
-        <ListGroup.Item as='li'><NavLink to="/taxes"><i className="fa-solid fa-house-chimney"></i> <span> Taxes </span> </NavLink></ListGroup.Item>
+      <ListGroup.Item as='li'><NavLink to="/view"> <i className="fa-solid fa-house-chimney"></i> <span> Employee  </span> </NavLink></ListGroup.Item>
+        <ListGroup.Item as='li'><NavLink to="/view/department"><i className="fa-solid fa-house-chimney"></i> <span> Departments </span> </NavLink></ListGroup.Item>
+        <ListGroup.Item as='li'><NavLink to="/view/taxes"><i className="fa-solid fa-house-chimney"></i> <span> Taxes </span> </NavLink></ListGroup.Item>
+        <ListGroup.Item as='li'><NavLink to="/view/one"><i className="fa-solid fa-house-chimney"></i> <span> One </span> </NavLink></ListGroup.Item>
       </ListGroup>
     </Navbar>
   );

@@ -2,179 +2,103 @@
     width: 100%;
      display: flex;
      align-items: center;
-     background-image: url('../../assets/images/1.svg');
+     height: 100vh;
+     /* background-image: url('../../assets/images/1.svg');
      background-repeat: no-repeat;
      background-size: cover;
-     background-position: right;
+     background-position: right; */
 }
 
-.home_form {
-    /* width: 30%; */
+.taxes_form {
+    width: 40%;
     height: fit-content;
-    background-color: #fff;
     border-radius: 0.25rem;
     box-shadow: 0.5px .5px 3px #000;
     overflow: hidden;
 }
 
-.home_form .alertt {
+.taxes_form .alertt {
     background-color: #000447 !important;
     color: #fff;
     border: none;
-    /* padding: 30px 0; */
     border-radius: 3px 3px 0 0;
 }
 
-.home_form .form {
-    background-color: #c51203;
+.taxes_form .form {
+    background-color: #ededef;
     height: auto;
-    /* background-color: #ededef; */
+    /* background-color: transparent; */
+    /* background-image: none !important; */
+    /* background-color: #c51203; */
     /* background-color: #20617f; */
     /* height: 500px; */
     /* overflow: auto; */
 }
 
-.home_form .form::-webkit-scrollbar-thumb {
+.taxes_form .form::-webkit-scrollbar-thumb {
     background: #000447;
     border-radius: 10px 0 10px 0;
 }
 
-.home_form .form::-webkit-scrollbar {
+.taxes_form .form::-webkit-scrollbar {
     width: .7rem;
     background-color: none;
 }
 
-.home_form .form label {
+.taxes_form .form label {
     font-size: .7rem;
     font-weight: 500;
-    color: #fff;
-    /* color: #000447; */
+    color: #000447;
+    /* color: #fff; */
 }
 
-.home_form .form input,
-.home_form .form select {
+.taxes_form .form input,
+.taxes_form .form select {
     padding: 5px 10px;
     font-size: .7rem;
     width: 100%;
     color: #6c757d;
 }
 
-.home_form .form input:focus,
-.home_form .form select:focus {
+.taxes_form .form input:focus,
+.taxes_form .form select:focus {
     box-shadow: none;
     border-color: #ced4da;
 }
 
-/* .home_form .form .form_btn {
+.taxes_form .form .form_btn {
+    background-color: #000447;
+    border-color: transparent;
+}
+
+/* .taxes_form .form .form_btn {
     background-color: #000447;
     border: none;
 } */
 
 
-/* .home_form .form .input_{
+/* .taxes_form .form .input_{
     width: 100% !important;
 } */
 
 
 /* Input width */
 
-.home_form .form .Taxpercentage {
-    width: 33%;
-}
 
-.home_form .form .Empid {
+.taxes_form .form .taxid {
     width: 15%;
 }
 
-.home_form .form .Empname {
-    width: 30%;
-}
-
-.home_form .form .Empidentity {
-    width: 20%;
-}
-.home_form .form .ContactNum {
-    width: 25%;
-}
-
-.home_form .form .Empdepartment {
-    width: 40%;
-}
-
-
-.home_form .form .Empdesignation {
-    width: 60%;
-}
-
-.home_form .form .Emergcontactperson {
-    width: 30%;
-}
-
-.home_form .form .Emergcontactnumber {
-    width: 30%;
-}
-
-
-.home_form .form .Empsalary {
-    width: 20%;
-}
-
-
-.home_form .form .Yearsalary {
-    width: 20%;
-}
-
-
-.home_form .form .Taxslab {
+.taxes_form .form .taxslab {
     width: 15%;
 }
 
 
-.home_form .form .Taxpercentage {
-    width: 15%;
-}
-
-.home_form .form .Taxamount {
+.taxes_form .form .extraAmount {
     width: 20%;
 }
 
 
-.home_form .form .Leaveincashment {
-    width: 30%;
+.taxes_form .form .minimum,.taxes_form .form .maximum  {
+    width: 50%;
 }
-
-/* .home_form .form .Empid,
-.home_form .form .Empname,
-.home_form .form .Empidentity{
-    width: 33%;
-} */
-
-/* 
-.home_form .form .Empid,
-.home_form .form .ContactNum,
-.home_form .form .Empsalary,
-.home_form .form .Yearsalary,
-.home_form .form .Taxslab,
-.home_form .form .Taxamount,
-.home_form .form .Leaveincashment     {
-    width: 37%;
-}
-
-.home_form .form .Empname,
-.home_form .form .Empidentity,  
-.home_form .form .Emergcontactperson {
-    width: 55%;
-}
-
-.home_form .form .Empdesignation,
-.home_form .form .Empadress {
-    width: 100%;
-}
-
-.home_form .form .Emergcontactnumber {
-    width: 60%;
-}
-
-.home_form .form  {
-    width: 100%;
-} */

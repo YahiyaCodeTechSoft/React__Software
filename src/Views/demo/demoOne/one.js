@@ -2,31 +2,31 @@ import React from "react";
 
 import { Form, Button, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './employee.css'
+import './one.css'
 
-function Home() {
+function One() {
   return (
-    <main className="main_home">
-      <div className="home_form   w-50">
+    <main className="main_one">
+      <div className="one_form w-50">
         <Alert className="text-center fs-4 m-0   alertt">
-          Employee Profile
+          One
         </Alert>
         <Form className="form py-3 px-4" >
           <div className="input_group d-flex align-items-center justify-content-between gap-2">
             <Form.Group className="mb-2 Empid" controlId="formBasicEmail">
-              <Form.Label >Employee ID</Form.Label>
-              <Form.Control type="text" placeholder="Employee ID" />
+              <Form.Label >Tax ID</Form.Label>
+              <Form.Control type="text" placeholder="Tax ID" />
               {/* <Form.Text className="text-muted ps-2">
             We'll never share your email with anyone else.
           </Form.Text> */}
             </Form.Group>
-            <Form.Group className="mb-2 Empname" controlId="formBasicEmail">
-              <Form.Label>Employee Name</Form.Label>
-              <Form.Control type="text" placeholder="Employee Name" />
+            <Form.Group className="mb-2 taxdescription" controlId="formBasicEmail">
+              <Form.Label>Tax Description</Form.Label>
+              <Form.Control type="text" placeholder="Tax Description" />
             </Form.Group>
-            <Form.Group className="mb-2  Empidentity" controlId="formBasicEmail">
-              <Form.Label>Employee Identity</Form.Label>
-              <Form.Control type="text" placeholder="Employee Identity" />
+            <Form.Group className="mb-2  taxslab" controlId="formBasicEmail">
+              <Form.Label>Tax Slab</Form.Label>
+              <Form.Control type="text" placeholder="Tax Slab" />
             </Form.Group>
             <Form.Group className="mb-2 ContactNum" controlId="formBasicEmail">
               <Form.Label>Contact Number</Form.Label>
@@ -126,4 +126,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default One;

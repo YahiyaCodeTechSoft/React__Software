@@ -1,0 +1,183 @@
+.main_one{
+    width: 100%;
+     display: flex;
+     align-items: center;
+}
+
+.one_form {
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0.5px .5px 3px #000;
+    overflow: hidden;
+    margin:  auto;
+    
+}
+
+
+
+.one_form .alertt {
+    background-color: #000447 !important;
+    color: #fff;
+    border: none;
+    border-radius: 3px 3px 0 0;
+    /* padding: 30px 0; */
+}
+
+.one_form .form {
+    background-color: #ededef;
+    height: auto;
+    /* background-color: #c51203; */
+    /* background-color: #20617f; */
+    /* height: 500px; */
+    /* overflow: auto; */
+    /* background-image: url('../../../assets/images/1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+.one_form .form::-webkit-scrollbar-thumb {
+    background: #000447;
+    border-radius: 10px 0 10px 0;
+}
+
+.one_form .form::-webkit-scrollbar {
+    width: .7rem;
+    background-color: none;
+}
+
+.one_form .form label {
+    font-size: .7rem;
+    font-weight: 500;
+    color: #000447;
+    /* color: #fff; */
+}
+
+.one_form .form input,
+.one_form .form select {
+    padding: 5px 10px;
+    font-size: .7rem;
+    width: 100%;
+    color: #6c757d;
+}
+
+.one_form .form input:focus,
+.one_form .form select:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.one_form .form .form_btn {
+    background-color: #000447;
+    border-color: transparent;
+}
+
+.one_form .form .form_btn:hover {
+    background-color: transparent;
+    border-color: #fff  ;
+}
+
+
+/* Input width */
+
+.one_form .form .Taxpercentage {
+    width: 33%;
+}
+
+.one_form .form .Empid {
+    width: 15%;
+}
+
+.one_form .form .Empname {
+    width: 30%;
+}
+
+.one_form .form .Empidentity {
+    width: 20%;
+}
+.one_form .form .ContactNum {
+    width: 25%;
+}
+
+.one_form .form .Empdepartment {
+    width: 40%;
+}
+
+
+.one_form .form .Empdesignation {
+    width: 60%;
+}
+
+.one_form .form .Emergcontactperson {
+    width: 30%;
+}
+
+.one_form .form .Emergcontactnumber {
+    width: 30%;
+}
+
+
+.one_form .form .Empsalary {
+    width: 20%;
+}
+
+
+.one_form .form .Yearsalary {
+    width: 20%;
+}
+
+
+.one_form .form .Taxslab {
+    width: 15%;
+}
+
+
+.one_form .form .Taxpercentage {
+    width: 15%;
+}
+
+.one_form .form .Taxamount {
+    width: 20%;
+}
+
+
+.one_form .form .Leaveincashment {
+    width: 30%;
+}
+
+/* .one_form .form .Empid,
+.one_form .form .Empname,
+.one_form .form .Empidentity{
+    width: 33%;
+} */
+
+/* 
+.one_form .form .Empid,
+.one_form .form .ContactNum,
+.one_form .form .Empsalary,
+.one_form .form .Yearsalary,
+.one_form .form .Taxslab,
+.one_form .form .Taxamount,
+.one_form .form .Leaveincashment     {
+    width: 37%;
+}
+
+.one_form .form .Empname,
+.one_form .form .Empidentity,  
+.one_form .form .Emergcontactperson {
+    width: 55%;
+}
+
+.one_form .form .Empdesignation,
+.one_form .form .Empadress {
+    width: 100%;
+}
+
+.one_form .form .Emergcontactnumber {
+    width: 60%;
+}
+
+.one_form .form  {
+    width: 100%;
+} */
