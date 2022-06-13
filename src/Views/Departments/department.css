@@ -42,6 +42,12 @@
     color: #000447;
 }
 
+.form_department .form .form_check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .form_department .form input,
 .form_department .form select,
 .form_department .form textarea {

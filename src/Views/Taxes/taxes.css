@@ -52,6 +52,12 @@
     /* color: #fff; */
 }
 
+.taxes_form .form .form_check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .taxes_form .form input,
 .taxes_form .form select {
     padding: 5px 10px;

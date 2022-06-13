@@ -1,7 +1,27 @@
-.main_home{
+.main_home {
     width: 100%;
-     display: flex;
-     align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.main_home .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000447;
+}
+
+.main_home .navbar a {
+    color: #fff;
+}
+
+.main_home .navbar .nav-item a,
+.main_home .navbar .navbar-nav a {
+    color: #fff;
+}
+
+.main_home .navbar a:hover,.main_home .navbar .nav-item a:hover,.main_home .navbar .navbar-nav a:hover{
+    color: #fff;
 }
 
 .home_form {
@@ -10,10 +30,10 @@
     border-radius: 0.25rem;
     box-shadow: 0.5px .5px 3px #000;
     overflow: hidden;
-    margin:  auto;
+    margin: auto;
     /* background-color: #c51203; */
     /* background-color: #20617f; */
-    
+
 }
 
 
@@ -28,7 +48,7 @@
 
 
 .home_form .form {
-    background-color: #ededef;
+    /* background-color: #ededef; */
     height: auto;
     /* background-color: transparent; */
     /* background-image: none !important; */
@@ -69,6 +89,17 @@
     border-color: #ced4da;
 }
 
+.home_form .form .form_check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home_form .form .form_check input {
+    width: 1rem;
+    height: 1rem;
+}
+
 .home_form .form .form_btn {
     background-color: #000447;
     border-color: transparent;
@@ -76,7 +107,7 @@
 
 .home_form .form .form_btn:hover {
     background-color: transparent;
-    border-color: #fff  ;
+    border-color: #fff;
 }
 
 
@@ -97,6 +128,7 @@
 .home_form .form .Empidentity {
     width: 20%;
 }
+
 .home_form .form .ContactNum {
     width: 25%;
 }

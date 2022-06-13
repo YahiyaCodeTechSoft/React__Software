@@ -15,16 +15,17 @@ function View() {
 
   return (
 
-    <div className="view bg-light">
+    <div className="view ">
       <Container fluid>
         <Row>
           <Col sm={12} className="d-flex"><Navigation />
-            <Routes>
+            {/* <Routes>
               <Route exact  path="/view" element={<Home />} />
               <Route  path="/view/department" element={<Department />} />
               <Route  path="/view/taxes" element={<Taxes />} />
               <Route  path="/view/one" element={<One />} />
-            </Routes>
+            </Routes> */}
+            <Home />
           </Col>
         </Row>
       </Container>

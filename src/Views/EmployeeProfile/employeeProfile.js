@@ -1,13 +1,55 @@
 import React from "react";
 
-import { Form, Button, Alert } from 'react-bootstrap';
+import { Form, Button, Alert, Nav, NavDropdown, Navbar, Container, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './employee.css'
 
 function Home() {
   return (
     <main className="main_home">
-      <div className="home_form   w-50">
+      <Navbar expand="lg" className="navbar">
+        <Container className="">
+          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">
+                  Separated link
+                </NavDropdown.Item>
+              </NavDropdown> */}
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <div className="home_form bg-white   w-50">
         <Alert className="text-center fs-4 m-0   alertt">
           Employee Profile
         </Alert>
@@ -78,15 +120,6 @@ function Home() {
             <Form.Control type="text" placeholder="Employee Adress" className="Empadress" />
           </Form.Group>
 
-          {/* <div className="input_group d-flex  gap-2"> */}
-
-
-
-          {/* Checkbox */}
-
-
-          {/* </div> */}
-
           <div className="input_group d-flex align-items-center justify-content-between gap-2">
             <Form.Group className="mb-2 Taxslab" controlId="formBasicEmail">
               <Form.Label>TaxSlab (TaxID)</Form.Label>
@@ -109,10 +142,23 @@ function Home() {
             </Form.Group>
           </div>
 
-          <div className="input_group d-flex gap-2">
-
-
-          </div>
+          <Form.Group className="mb-1  mt-2">
+            <Form.Label>Employee Status</Form.Label>
+            <div className="d-flex gap-4">
+              <Form.Check className="form_check"
+                type="radio"
+                label="Online"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios1"
+              />
+              <Form.Check className="form_check"
+                type="radio"
+                label="Offline"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios1"
+              />
+            </div>
+          </Form.Group>
 
 
 

@@ -49,6 +49,24 @@ function Taxes() {
            
           </div>
 
+          <Form.Group className="mb-1  mt-2">
+            <Form.Label>Taxes Status</Form.Label>
+            <div className="d-flex gap-4">
+              <Form.Check className="form_check"
+                type="radio"
+                label="Online"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios1"
+              />
+              <Form.Check className="form_check"
+                type="radio"
+                label="Offline"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios1"
+              />
+            </div>
+          </Form.Group>
+
 
 
 

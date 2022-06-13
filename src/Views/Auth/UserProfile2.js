@@ -33,7 +33,9 @@ function UserProfile2() {
           </Button>
           <div className="message text-center mt-4">
           <p>
-            Forgot Password? <a href="#">Click Here</a>
+            Forgot Password? <NavLink to="/user2" className="mx-2">
+            Click Here
+            </NavLink>
           </p>
           </div>
         </Form>
