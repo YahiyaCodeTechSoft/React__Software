@@ -3,10 +3,14 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./UserProfile2.css";
+import AuthHeader from '../../Containers/AuthHeader/authHeader'
 // import Logo from "../../assets/images/logo.png";
 
 function UserProfile2() {
   return (
+    <>
+    <AuthHeader />
+
     <main className="main_user2">
       <div className="login_form1  ">
       <Alert className="text-center fs-4 m-0   alertt">
@@ -33,7 +37,7 @@ function UserProfile2() {
           </Button>
           <div className="message text-center mt-4">
           <p>
-            Forgot Password? <NavLink to="/user2" className="mx-2">
+            Forgot Password? <NavLink to="/user3" className="mx-2">
             Click Here
             </NavLink>
           </p>
@@ -60,6 +64,7 @@ function UserProfile2() {
         </form> */}
       </div>
     </main>
+    </>
   );
 }
 

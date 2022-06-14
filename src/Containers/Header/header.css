@@ -35,6 +35,23 @@
   width: 4rem;
 }
 
+.navbar_ ul {
+  height: 100vh;
+  overflow: auto;
+  padding: 20px 0;
+}
+
+.navbar_ ul::-webkit-scrollbar-thumb {
+  background: #ededed;
+  border-radius: 10px 0 10px 0;
+}
+
+.navbar_ ul::-webkit-scrollbar {
+  width: .5rem;
+  background-color: #000447;
+}
+
+
 .navbar_ ul li {
     border-bottom: 1px  solid #606060;
     background-color: transparent;

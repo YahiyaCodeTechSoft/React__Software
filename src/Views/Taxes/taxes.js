@@ -5,7 +5,7 @@ import './taxes.css'
 
 function Taxes() {
   return (
-    <main className="main_taxes">
+    <main className="main_taxes mt-5">
       <div className="taxes_form m-auto w-50">
         <Alert className="text-center fs-4 m-0   alertt">
           Taxes
@@ -19,10 +19,6 @@ function Taxes() {
             We'll never share your email with anyone else.
           </Form.Text> */}
             </Form.Group>
-            <Form.Group className="mb-2 taxdescription" controlId="formBasicEmail">
-              <Form.Label>Tax Description</Form.Label>
-              <Form.Control type="text" placeholder="Tax Description" />
-            </Form.Group>
             <Form.Group className="mb-2  taxslab" controlId="formBasicEmail">
               <Form.Label>Tax Slab</Form.Label>
               <Form.Control type="text" placeholder="Tax Slab" />
@@ -35,19 +31,29 @@ function Taxes() {
 
 
 
+
           <div className="input_group d-flex align-items-center justify-content-between  gap-2">
             <Form.Group className="mb-2 minimum" controlId="formBasicEmail">
               <Form.Label>Minimum</Form.Label>
-              <Form.Control type="text" placeholder="Minimum"  />
+              <Form.Control type="text" placeholder="Minimum" />
             </Form.Group>
 
 
             <Form.Group className="mb-2 maximum" controlId="formBasicEmail">
               <Form.Label>Maximum</Form.Label>
-              <Form.Control type="text" placeholder="Maximum"  />
+              <Form.Control type="text" placeholder="Maximum" />
             </Form.Group>
-           
+
           </div>
+
+          <Form.Group className="mb-2 taxdescription" controlId="formBasicEmail">
+            <Form.Label>Tax Description</Form.Label>
+            <Form.Control
+              as="textarea"
+              placeholder="Tax Description"
+              rows={5}
+            />
+          </Form.Group>
 
           <Form.Group className="mb-1  mt-2">
             <Form.Label>Taxes Status</Form.Label>

@@ -2,13 +2,13 @@
 
 .main_user2 {
   width: 100%;
-     display: flex;
-     align-items: center;
-     height: 100vh;
-     background-image: url('../../assets/images/bg1.webp');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: right;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../assets/images/bg1.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
 }
 
 .login_form1 {
@@ -16,11 +16,12 @@
   height: fit-content;
   border-radius: 10px;
   box-shadow: 0.5px .5px 3px #000;
-  border: 2px solid rgba(255,255,255,0.1);
-  background-color: rgba(255,255,255,0.13);
+  background-color: rgba(255, 255, 255, 0.13);
+  background-color: rgb(255 255 255 / 30%);
+
   overflow: hidden;
-  margin:  auto;
-  
+  margin: auto;
+
 }
 
 .login_form1 .form {
@@ -30,7 +31,7 @@
 
 
 .login_form1 .alertt {
-  background-color: transparent ;
+  background-color: transparent;
   color: #fff;
   border: none;
   border-radius: 3px 3px 0 0;
@@ -48,7 +49,7 @@
   padding: 10px;
   font-size: .7rem;
   width: 100%;
-  background-color: rgba(255,255,255,0.07);
+  background-color: rgba(255, 255, 255, 0.07);
   border-radius: 3px;
   border: none;
   color: #fff;
@@ -83,6 +84,7 @@
   font-size: .8rem;
   font-weight: bold;
 }
+
 .login_form1 .form .message a {
   color: yellow;
   text-decoration: none;
@@ -168,7 +170,7 @@
 } */
 /* body {
   background: #76b852; /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(right, #e3242b , #b90e0a);
+/* background: -webkit-linear-gradient(right, #e3242b , #b90e0a);
   background: -moz-linear-gradient(right, #e3242b, #b90e0a);
   background: -o-linear-gradient(right, #e3242b, #b90e0a)  ;
   background: linear-gradient(to left, #e3242b, #b90e0a);

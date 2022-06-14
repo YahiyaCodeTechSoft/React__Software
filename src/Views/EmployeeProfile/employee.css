@@ -4,26 +4,6 @@
     align-items: center;
 }
 
-.main_home .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #000447;
-}
-
-.main_home .navbar a {
-    color: #fff;
-}
-
-.main_home .navbar .nav-item a,
-.main_home .navbar .navbar-nav a {
-    color: #fff;
-}
-
-.main_home .navbar a:hover,.main_home .navbar .nav-item a:hover,.main_home .navbar .navbar-nav a:hover{
-    color: #fff;
-}
-
 .home_form {
     height: fit-content;
     background-color: #ededef;
@@ -105,10 +85,10 @@
     border-color: transparent;
 }
 
-.home_form .form .form_btn:hover {
+/* .home_form .form .form_btn:hover {
     background-color: transparent;
     border-color: #fff;
-}
+} */
 
 
 /* Input width */

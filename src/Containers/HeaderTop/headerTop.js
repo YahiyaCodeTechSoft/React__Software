@@ -1,34 +1,106 @@
 import React from "react";
-import { Navbar,ListGroup, } from 'react-bootstrap';
-import { NavLink } from "react-router-dom";
+import { Navbar,Nav, NavDropdown, Container, Col, Row } from 'react-bootstrap';
+// import { NavLink } from "react-router-dom";
 // import {Button} from '@mui/material'
 // import {Link} from 'react-router-dom'
-import logo from "../../assets/images/logo.png"
+// import logo from "../../assets/images/logo.png"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './header.css'
+import './headerTop.css'
 
-function Navigation() {
+function NavigationTop() {
   return (
-    // <main className="header">
+    <main className="header_top">
 
-    
-    <Navbar bg="light " className="navbar_ d-block" >
-      <div className="logo">
-        <img src={logo} className="w-100" alt="" />
-      </div>
+    {/* <Navbar expand="lg" className="navbar">
+        <Container fluid>
+          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto gap-3">
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">
+                  Separated link
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar> */}
 
-      <ListGroup as='ul' >
-        {/* <ListGroup.Item as='li'><Link to="/"> <i className="fa-solid fa-house-chimney"></i><span> Home </span></Link></ListGroup.Item> */}
-        {/* <ListGroup.Item as='li'><Link to="/dashboard"> <i className="fa-solid fa-house-chimney"></i><span> Dashboard </span></Link></ListGroup.Item> */}
-        {/* <ListGroup.Item as='li'><Link to="/"> <i className="fa-solid fa-house-chimney"></i><span> Home </span></Link></ListGroup.Item> */}
-      <ListGroup.Item as='li'><NavLink to="/view"> <i className="fa-solid fa-house-chimney"></i> <span> Employee  </span> </NavLink></ListGroup.Item>
-        <ListGroup.Item as='li'><NavLink to="/view/department"><i className="fa-solid fa-house-chimney"></i> <span> Departments </span> </NavLink></ListGroup.Item>
-        <ListGroup.Item as='li'><NavLink to="/view/taxes"><i className="fa-solid fa-house-chimney"></i> <span> Taxes </span> </NavLink></ListGroup.Item>
-        {/* <ListGroup.Item as='li'><NavLink to="/view/one"><i className="fa-solid fa-house-chimney"></i> <span> One </span> </NavLink></ListGroup.Item> */}
-      </ListGroup>
-    </Navbar>
-    // </main>
+<Navbar  className="navbar">
+        <Container fluid className="mx-2 ">
+          <Nav className="gap-4">
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          {/* <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link> */}
+          </Nav>
+          {/* <Navbar.Brand href="#">Navbar</Navbar.Brand> */}
+        </Container>
+      </Navbar>
+      
+     </main>
   );
 }
 
-export default Navigation;
+export default NavigationTop;

@@ -1,9 +1,9 @@
-.main_taxes{
+.main_taxes {
     width: 100%;
-     display: flex;
-     align-items: center;
-     height: 100vh;
-     /* background-image: url('../../assets/images/1.svg');
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url('../../assets/images/1.svg');
      background-repeat: no-repeat;
      background-size: cover;
      background-position: right; */
@@ -59,15 +59,21 @@
 }
 
 .taxes_form .form input,
-.taxes_form .form select {
+.taxes_form .form select,
+.taxes_form .form textarea {
     padding: 5px 10px;
     font-size: .7rem;
     width: 100%;
     color: #6c757d;
 }
 
+textarea {
+    resize: none;
+}
+
 .taxes_form .form input:focus,
-.taxes_form .form select:focus {
+.taxes_form .form select:focus,
+.taxes_form .form textarea:focus {
     box-shadow: none;
     border-color: #ced4da;
 }
@@ -91,7 +97,7 @@
 /* Input width */
 
 
-.taxes_form .form .taxid {
+/* .taxes_form .form .taxid {
     width: 15%;
 }
 
@@ -102,9 +108,17 @@
 
 .taxes_form .form .extraAmount {
     width: 20%;
+} */
+
+
+.taxes_form .form .taxid,
+.taxes_form .form .taxslab,
+.taxes_form .form .extraAmount {
+    width: 100%;
 }
 
 
-.taxes_form .form .minimum,.taxes_form .form .maximum  {
+.taxes_form .form .minimum,
+.taxes_form .form .maximum {
     width: 50%;
 }
