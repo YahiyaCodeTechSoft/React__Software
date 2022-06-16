@@ -3,13 +3,11 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./UserProfile2.css";
-import AuthHeader from '../../Containers/AuthHeader/authHeader'
 // import Logo from "../../assets/images/logo.png";
 
 function UserProfile2() {
   return (
     <>
-    <AuthHeader />
 
     <main className="main_user2">
       <div className="login_form1  ">
