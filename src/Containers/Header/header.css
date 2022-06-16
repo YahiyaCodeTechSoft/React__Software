@@ -6,12 +6,9 @@
 }
 
 .navbar_  {
-    background-color: #000447  !important;
-   
-    width: 3.7rem;
-   
+  background-color: #36454F  !important; 
+    width: 4rem;
     transition: .3s all;
-    position: sticky  ;
     height: 100vh;
     overflow: hidden;
 }
@@ -23,22 +20,24 @@
 
 .navbar_ .logo {
   width: 4rem;
+  height: 3rem;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .navbar_ .logo img {
   width: 100%;
-  filter: invert(1);
 }
 
 .navbar_:hover .logo {
-  width: 4rem;
+  width: 8rem;
 }
 
 .navbar_ ul {
   height: 100vh;
   overflow: auto;
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 .navbar_ ul::-webkit-scrollbar-thumb {
@@ -53,10 +52,13 @@
 
 
 .navbar_ ul li {
+  border: none;
     border-bottom: 1px  solid #606060;
     background-color: transparent;
     padding-top: 30px ;
     padding-bottom: 30px ;
+    padding-left: 20px;
+    border-radius: 0 !important;
    
 }
 
@@ -66,26 +68,14 @@
   justify-content: flex-start;
   position: relative;
   gap: 2rem;
-  color: #fff;
+  color: #fff;  
+  /* color: #000; */
   text-decoration: none;
 }
 
+.navbar_ ul li:first-child {
+  border-top: 1px  solid #606060;
+}
 .navbar_ ul li:last-child {
   border: none;
 }
-
-/* .navbar_ ul li span {
-  position: absolute;
-  right: -100%;
-  transition: .3s all;
-  visibility: hidden;
-} */
-
-/* .navbar_:hover { 
-  width: 15%;
-} */
-/* 
-.navbar_:hover ul li span {
-  right: 10%;
-  visibility: visible;
-} */

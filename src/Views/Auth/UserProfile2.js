@@ -3,7 +3,7 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./UserProfile2.css";
-// import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/CTSLogo.png";
 
 function UserProfile2() {
   return (
@@ -12,7 +12,7 @@ function UserProfile2() {
     <main className="main_user2">
       <div className="login_form1  ">
       <Alert className="text-center fs-4 m-0   alertt">
-            LOGIN
+            <img src={Logo} style={{width:'100%'}} />
           </Alert>
         <Form className="form py-3 px-4 ">
 

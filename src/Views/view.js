@@ -23,12 +23,17 @@ function View() {
             <Navigation />
             <NavigationTop />
             <Home />
-            <Routes>
+            {/* <Department /> */}
+            {/* <Taxes /> */}
+            {/* <Menu /> */}
+
+            
+            {/* <Routes>
               <Route path="/view" element={<Home />} />
               <Route path="/view/department" element={<Department />} />
               <Route path="/view/taxes" element={<Taxes />} />
               <Route path="/view/menu" element={<Menu />} />
-            </Routes>
+            </Routes> */}
           </Col>
         </Row>
       </Container>
