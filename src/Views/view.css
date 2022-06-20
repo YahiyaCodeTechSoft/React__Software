@@ -16,7 +16,7 @@
     height: 100vh;
     width: 100%;
     position: sticky;
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 }
 
 .view .container-fluid {

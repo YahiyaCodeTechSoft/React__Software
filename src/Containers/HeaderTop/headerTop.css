@@ -5,6 +5,7 @@
     overflow-x: auto;
     border-left: 1px solid #606060;
     background-color: #36454F; 
+    z-index: 9;
     /* background-color: #D1CAC0  agrible grey;  */
   /* background-color: #FFFFF0  !important; ivory grey */
     /* background-color: #000447; */

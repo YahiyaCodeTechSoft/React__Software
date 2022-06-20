@@ -24,7 +24,8 @@
   height: fit-content;
   border-radius: 10px;
   box-shadow: 3px 3px 5px #000;
-  background-color: rgb(255 255 255 / 30%);
+  background-color:rgb(255 255 255 / 78%);
+  /* background-color: rgb(255 255 255 / 30%); */
   z-index: 1;
   overflow: hidden;
   margin: auto;
@@ -54,13 +55,14 @@
 
 .login_form1 .form input {
   padding: 10px;
-  font-size: .7rem;
+  font-size: 1rem;
   width: 100%;
   background-color: rgb(255 255 255 / 61%);
   box-shadow: 0px 0px 2px #000 ;
   border-radius: 3px;
   border: none;
   color: #000;
+  font-weight: bold;
 }
 
 .login_form1 .form input::placeholder {
