@@ -9,7 +9,7 @@
     font-size: 12px;
     font-weight: bold;
     border-bottom: 1px solid #ced4da;
-    background-color: #d5f3ff;
+    background-color: #e2edf1;
 }
 
 .general_form2 .tab_form input ,.general_form2 .tab_form select{
@@ -18,6 +18,15 @@
     color: #000;
     font-size: 12px;
     border-radius: 3px;
+}
+
+.general_form2 .tab_form .form-check-input{
+    background-color: #fff !important;
+}
+
+
+.general_form2 .tab_form .form-check-input:checked[type=checkbox] {
+    background-color: #0d6efd !important;
 }
 
 .general_form2 .tab_form p {
@@ -77,6 +86,7 @@
     display: block;
     width: 100%;
     text-align: end;
+    font-size: 10px;
 
 }
 
@@ -86,6 +96,15 @@
 
 .general_form2 .tab_form.policy .inner_ .left  {
     width: 60%;
+}
+
+.general_form2 .tab_form.policy .inner_ .left .left_  {
+    width: 75%;
+    gap: 10px;
+}
+
+.general_form2 .tab_form.policy .inner_ .left .left_ label{
+    text-align: start;
 }
 
 .general_form2 .tab_form.policy .inner_ .right {
@@ -169,7 +188,7 @@
 .general_form2 .tab_form.Option label:last-child {
     border-top: 1px solid #ced4da;
     border-bottom: none;
-    margin: 0;
+    margin: auto;
     padding: 5px  10px;
     background-color: #fff;
     /* display: none; */

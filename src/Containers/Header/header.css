@@ -11,6 +11,7 @@
     transition: .3s all;
     height: 100vh;
     overflow: hidden;
+    padding: 0;
 }
 
 .navbar_:hover {
@@ -19,22 +20,25 @@
 }
 
 .navbar_ .logo {
-  width: 4rem;
-  height: 3rem;
+  /* width: 4rem; */
+  height: 3.5rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  background-color: #36454F;
+  background-color: #e7e8e8;
+  width: 100%;
   /* background-color: #73818a; */
-  /* width: 100%; */
+  /* background-color: #36454F; */
 }
 
 .navbar_ .logo img {
   width: 100%;
+  max-width: 8rem;
+  margin: 0 auto;
 }
 
-.navbar_:hover .logo {
-  width: 8rem;
+.navbar_:hover .logo img {
+  width: 8rem !important;
 }
 
 .navbar_ ul {
@@ -55,25 +59,29 @@
 
 
 .navbar_ ul li {
-  border: none;
-    border-bottom: 1px  solid #606060;
-    background-color: transparent;
-    padding-top: 30px ;
-    padding-bottom: 30px ;
+  border-bottom: 1px  solid #606060;
+  background-color: transparent;
+    padding: 7px 0 7px 20px;
     padding-left: 20px;
     border-radius: 0 !important;
-   
 }
 
 .navbar_ ul li a {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  gap: 2rem;
+  /* justify-content: flex-start; */
+  gap: 2.3rem;
+  text-align: start;
   color: #fff;  
-  /* color: #000; */
   text-decoration: none;
+}
+
+.navbar_ ul li a i {
+  width: 10%;
+}
+
+.navbar_ ul li a span{
+  width: 90%; 
 }
 
 .navbar_ ul li:first-child {
@@ -81,4 +89,14 @@
 }
 .navbar_ ul li:last-child {
   border: none;
+}
+
+
+.navbar_:hover ul li {
+  padding: 7px 0 7px 20px;
+  /* border-bottom: 1px  solid #606060; */
+}
+
+.navbar_:hover ul li a  {
+  gap: 2.2rem;
 }

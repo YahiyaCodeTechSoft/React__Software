@@ -6,7 +6,7 @@
 
 .home_form {
     height: fit-content;
-    background-color: #ededef;
+    /* background-color: #ededef; */
     border-radius: 0.25rem;
     box-shadow: 0.5px .5px 3px #000;
     overflow: hidden;
@@ -24,6 +24,7 @@
     color: #fff;
     border: none;
     border-radius: 3px 3px 0 0;
+    padding: 5px 0;
 }
 
 
@@ -108,12 +109,16 @@
 }
 
 .home_form .form .Empdepartment {
-    width: 40%;
+    width: 30%;
+}
+
+.home_form .form .email {
+    width: 30%;
 }
 
 
 .home_form .form .Empdesignation {
-    width: 60%;
+    width: 40%;
 }
 
 .home_form .form .Emergcontactperson {

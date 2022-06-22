@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Container, Col, Row, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './general2.css'
+import './general.css'
 
 
-function General2() {
+function General() {
     const [selects, setSelects] = useState();
     return (
         <Container fluid>
@@ -57,7 +57,7 @@ function General2() {
                             <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
                                 <Form.Label className='m-0 pb-1'>Overtime Warning</Form.Label>
                                 <div className='py-1 px-2 '>
-                                    <Form.Check className='d-flex align-items-center' type="checkbox" checked label="Display warning if booking registrant into overtime" />
+                                    <Form.Check className='d-flex align-items-center' type="checkbox"  label="Display warning if booking registrant into overtime" />
                                 </div>
                             </Form.Group>
                         </div>
@@ -77,47 +77,64 @@ function General2() {
                         <div className='tab_form policy'>
                             <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
                                 <Form.Label className='m-0 pb-1'>Password ploicy</Form.Label>
-                                <div className='inner_ d-flex'>
+                                <div className='inner_ d-flex align-items-center'>
                                     <div className='right'>
-                                        <Form.Label>Tolerance :</Form.Label>
+                                        <Form.Label>Enforce upper and lower case:</Form.Label>
                                     </div>
                                     <div className='py-1 px-2 left'>
-                                        <Form.Control type="text" placeholder="30" />
+                                        <Form.Check className='d-flex align-items-center' type="checkbox"  />
+                                        {/* <Form.Control type="text" placeholder="30"  /> */}
+                                    </div>
+                                </div>
+
+                                <div className='inner_ d-flex align-items-center'>
+                                    <div className='right'>
+                                        <Form.Label>Enforce at least one number:</Form.Label>
+                                    </div>
+                                    <div className='py-1 px-2 left'>
+                                        <Form.Check className='d-flex align-items-center' type="checkbox"  />
+                                        {/* <Form.Control type="text" placeholder="30"  /> */}
                                     </div>
                                 </div>
 
                                 <div className='inner_ d-flex'>
                                     <div className='right'>
-                                        <Form.Label>Tolerance :</Form.Label>
+                                        <Form.Label>Minimum password length:</Form.Label>
                                     </div>
-                                    <div className='py-1 px-2 left'>
-                                        <Form.Control type="text" placeholder="30" />
+                                    <div className='py-1 px-2 left '>
+                                        <div className='left_ d-flex'>
+                                            <Form.Control type="text" placeholder="30" />
+                                            <Form.Label>Characters</Form.Label>
+                                        </div>
+                                        {/* <Form.Label>Characters</Form.Label>
+                                        <Form.Control type="text" placeholder="30" class /> */}
                                     </div>
                                 </div>
+
                                 <div className='inner_ d-flex'>
                                     <div className='right'>
-                                        <Form.Label>Tolerance :</Form.Label>
+                                        <Form.Label>Password expire in:</Form.Label>
                                     </div>
-                                    <div className='py-1 px-2 left'>
-                                        <Form.Control type="text" placeholder="30" />
+                                    <div className='py-1 px-2 left '>
+                                        <div className='left_ d-flex'>
+                                            <Form.Control type="text" placeholder="30" />
+                                            <Form.Label>Days</Form.Label>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <div className='inner_ d-flex'>
                                     <div className='right'>
-                                        <Form.Label>Tolerance :</Form.Label>
+                                        <Form.Label>Passwords can not repeat within:</Form.Label>
                                     </div>
-                                    <div className='py-1 px-2 left'>
-                                        <Form.Control type="text" placeholder="30" />
-                                    </div>
-                                </div>
-                                <div className='inner_ d-flex'>
-                                    <div className='right'>
-                                        <Form.Label>Tolerance :</Form.Label>
-                                    </div>
-                                    <div className='py-1 px-2 left'>
-                                        <Form.Control type="text" placeholder="30" />
+                                    <div className='py-1 px-2 left '>
+                                        <div className='left_ d-flex'>
+                                            <Form.Control type="text" placeholder="30" />
+                                            <Form.Label>Days</Form.Label>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <Form.Label>Set Value to zero (0) to disable enforcement of a password policy</Form.Label>
                             </Form.Group>
                         </div>
@@ -201,7 +218,10 @@ function General2() {
                                     </ul>
                                     )
                                 })} */}
-                               
+                                {/* e3f2f8 */}
+                                {/* eaf4f8 */}
+                                {/* e2edf1 */}
+
                                 <Form.Label>{selects}</Form.Label>
                             </Form.Group>
                         </div>
@@ -213,4 +233,4 @@ function General2() {
     )
 }
 
-export default General2;
+export default General;

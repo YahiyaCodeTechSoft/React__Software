@@ -20,8 +20,8 @@ function Navigation() {
       <ListGroup.Item as='li'><NavLink to="/home"> <i class="fa-solid fa-user"></i> <span> Employee  </span> </NavLink></ListGroup.Item>
         <ListGroup.Item as='li'><NavLink to="/department"><i class="fa-solid fa-users"></i> <span> Departments </span> </NavLink></ListGroup.Item>
         <ListGroup.Item as='li'><NavLink to="/taxes"><i class="fa-solid fa-database"></i> <span> Taxes </span> </NavLink></ListGroup.Item>
-        <ListGroup.Item as='li'><NavLink to="/menu"><i class="fa-solid fa-bars"></i> <span> Menues </span> </NavLink></ListGroup.Item>
-        <ListGroup.Item as='li'><NavLink to="/companyProfile"><i class="fa-solid fa-bars"></i> <span> Tabs </span> </NavLink></ListGroup.Item>
+        <ListGroup.Item as='li'><NavLink to="/menu"><i class="fa-solid fa-bars"></i> <span> Menus </span> </NavLink></ListGroup.Item>
+        <ListGroup.Item as='li'><NavLink to="/companyProfile"><i class="fa-solid fa-table-columns"></i> <span> Tabs </span> </NavLink></ListGroup.Item>
       </ListGroup>
     </Navbar>
     // </main>

@@ -2,10 +2,10 @@ import React from "react";
 import { Form, Button, Alert } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import "./UserProfile2.css";
+import "./UserProfile.css";
 import Logo from "../../assets/images/CTSLogo.png";
 
-function UserProfile2() {
+function UserProfile() {
   return (
     <>
 
@@ -28,14 +28,14 @@ function UserProfile2() {
             </Form.Group>
             </div>
             <Button className="form_btn mt-2 w-100" type="submit">
-            <NavLink to="/view">
+            <NavLink to="/home">
             Log In
             </NavLink>
               
           </Button>
           <div className="message text-center mt-4">
           <p>
-            Forgot Password? <NavLink to="/user3" className="mx-2">
+            Forgot Password? <NavLink to="/" className="mx-2">
             Click Here
             </NavLink>
           </p>
@@ -66,4 +66,4 @@ function UserProfile2() {
   );
 }
 
-export default UserProfile2;
+export default UserProfile;
