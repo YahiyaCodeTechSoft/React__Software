@@ -3,6 +3,7 @@ import { Tab, Tabs } from 'react-bootstrap';
 import General from './general/General';
 import Client from './client/Client';
 import Registry from './registry/Registry'
+import PayRoll from './PayRoll/PayRoll'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ComplanyProfile.css'
 
@@ -25,7 +26,7 @@ function CompanyProfile() {
                             {/* <p>Registry</p> */}
                         </Tab>
                         <Tab eventKey="payroll" title="Payroll">
-                            {/* <General /> */}
+                            <PayRoll />
                         </Tab>
                         <Tab eventKey="symmetry" title="Symmetry">
                             {/* <General /> */}

@@ -22,7 +22,6 @@
 
 .general_form2 .tab_form .form-check-input{
     background-color: #fff !important;
-    padding: 7px   ;
 }
 
 
@@ -48,7 +47,7 @@
 }
 
 .general_form2 .tab_form .inner_ label {
-    width: 20%;
+    width: 50%;
     padding: 5px;
     margin:0;
     border-bottom: none;
@@ -58,7 +57,22 @@
 }
 
 
+.general_form2 h5{
+    font-size: 13px;
+    margin: 0 auto;
+    font-weight: bold;
+}
 
+.general_form2 .para{
+    margin-left: 5px;
+    margin-top: -20px;
+}
+
+.general_form2 .para1{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
 
 .general_form2 .tab_form .inner_ label:last-child {
     border-bottom: none;
@@ -82,6 +96,23 @@
     background-color: #fff;
 }
 
+.general_form2 .delay label{
+    background-color: #fff;
+    border: none;
+    margin: 7px;
+    padding: 0;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+
+.general_form2 .bcd{
+    font-size: 10px;
+}
+
+.general_form2 .delay label input{
+    width: 10%;
+    margin: 0 10px;
+}
 
 .general_form2 .tab_form.policy .inner_ label {
     display: block;
@@ -143,7 +174,7 @@
 
 .general_form2 .tab_form.override .inner_ label {
     display: block;
-    width: 100%;
+    width: 50%;
     text-align: end;
 
 }

@@ -15,9 +15,9 @@ function NavigationTop() {
         <Container fluid className="mx-2 ">
           {/* <h3 className="text-white fs-5">Hello World</h3> */}
           <Nav className="gap-4">
-          <Nav.Link href="#link">Link</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
+          <Nav.Link href="#link">New</Nav.Link>
+          <Nav.Link href="#link">Edit</Nav.Link>
+          <Nav.Link href="#link">Update</Nav.Link>
           </Nav>
           {/* <Navbar.Brand href="#">Navbar</Navbar.Brand> */}
         </Container>
