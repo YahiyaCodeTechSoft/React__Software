@@ -9,7 +9,7 @@ import './ComplanyProfile.css'
 
 function CompanyProfile() {
   return (
-    <main className='company_main_tab bg-light'>
+    <main className='company_main_tab '>
             <div className='cennt'>
                 <div className='tabbs1'>
                     <Tabs
