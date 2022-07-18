@@ -115,6 +115,7 @@
 .dashboard_feild .sec.first .body thead,
 .dashboard_feild .sec.first .body tr {
     border: none !important;
+    white-space: nowrap;
 
 }
 
@@ -205,3 +206,18 @@
     background-color: #36454F;
     color: #fff;
 }
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .main_dashboard .cennt {
+        padding: 5% 20px 37% 20px !important;
+        margin: 0 !important;
+    }
+
+    .main_dashboard .dashboard_feild {
+        margin: 0 !important;
+    }
+  }

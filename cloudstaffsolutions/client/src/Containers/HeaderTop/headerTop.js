@@ -21,9 +21,9 @@ function NavigationTop() {
               </Form.Select>
               </Form>
           {/* <Navbar.Brand href="#">Navbar scroll</Navbar.Brand> */}
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <div className="d-flex justify-content-between w-100">
+          {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
+          {/* <Navbar.Collapse id="navbarScroll"> */}
+            <div className="navigate d-flex justify-content-between w-100">
              
               <Nav
                 className="me-auto my-2 my-lg-0 d-flex align-items-center"
@@ -31,10 +31,10 @@ function NavigationTop() {
                 navbarScroll
               >
               <p className="m-0">Welcome: User (AMT Medical Staffing)</p>
-                <Nav.Link href="/dashboard"><i className="fa-solid fa-users"></i>  Dashboard </Nav.Link>
-                <Nav.Link href="#action2"><i className="fa-solid fa-users"></i> Prefrence</Nav.Link>
-                <Nav.Link href="#action2"><i className="fa-solid fa-users"></i> Support</Nav.Link>
-                <Nav.Link href="/"><i className="fa-solid fa-users"></i> Logout</Nav.Link>
+                <Nav.Link href="/dashboard"><i class="fa-solid fa-chart-line"></i>  Dashboard </Nav.Link>
+                <Nav.Link href="#action2"><i class="fa-solid fa-asterisk"></i> Prefrence</Nav.Link>
+                <Nav.Link href="#action2"><i class="fa-solid fa-circle-question"></i> Support</Nav.Link>
+                <Nav.Link href="/"><i class="fa-solid fa-right-from-bracket"></i> Logout</Nav.Link>
                 {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
@@ -49,7 +49,7 @@ function NavigationTop() {
 
             </div>
 
-          </Navbar.Collapse>
+          {/* </Navbar.Collapse> */}
         </Container>
       </Navbar>
 

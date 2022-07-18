@@ -14,7 +14,7 @@ function Client() {
     return (
         <Container fluid>
             <Row>
-                <Col md={6} >
+                <Col lg={12} >
                     <Form className='client_form'>
                         <div className='tab_form Option'>
                             <Form.Group className="mb-3 tab_form_" controlId="formBasicText">

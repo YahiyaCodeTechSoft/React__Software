@@ -6,7 +6,7 @@ function Invoicing() {
   return (
     <Container fluid>
       <Row>
-        <Col md={6}>
+        <Col lg={6}>
           <Form className="invoicing_form">
             <div className="tab_form policy">
               <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
@@ -121,7 +121,7 @@ function Invoicing() {
          
         </Col>
 
-        <Col md={6}>
+        <Col lg={6}>
           <Form className="general_form2">
             <div className="tab_form policy">
               <Form.Group className="mb-3 tab_form_" controlId="formBasicText">

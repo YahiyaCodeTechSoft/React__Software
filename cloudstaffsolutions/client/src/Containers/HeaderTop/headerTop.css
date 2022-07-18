@@ -88,3 +88,26 @@
     font-size: 10px;
     margin-right: 30px !important;
 }
+
+
+
+@media only screen and (max-width: 991px) {
+    .header_top .navbar .container-fluid {
+        padding: 5px 0 !important;
+        flex-direction: column;
+    }
+
+    .header_top .navbar p {
+       margin-right: 10px !important;
+    }
+
+    .header_top .navbar .navbar-nav {
+        justify-content: center !important;
+    }
+  
+    
+    .header_top .navbar .navbar-nav a  {
+        margin:  0 5px;
+    }
+  }
+

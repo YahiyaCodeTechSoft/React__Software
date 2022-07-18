@@ -31,7 +31,7 @@ function Department() {
       })
   }
   return (
-    <main className="main_department">
+    <main className="main_dashboard">
       <NavigationTop />
       <div className='cennt mt-5'>
         <div className="form_department  m-auto w-50">

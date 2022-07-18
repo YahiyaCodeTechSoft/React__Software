@@ -6,7 +6,7 @@ function Holidays() {
   return (
     <Container fluid>
       <Row>
-        <Col md={12}>
+        <Col lg={12}>
           <Form className="holidays_form">
             <div className="tab_form">
             <div className="tab_form policy">

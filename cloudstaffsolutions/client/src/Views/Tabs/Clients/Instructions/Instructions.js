@@ -6,7 +6,7 @@ function Instructions() {
   return (
     <Container fluid>
       <Row>
-        <Col md={12}>
+        <Col lg={12}>
           <Form className="instructions_form">
             <div className="tab_form">
             <div className="tab_form policy">

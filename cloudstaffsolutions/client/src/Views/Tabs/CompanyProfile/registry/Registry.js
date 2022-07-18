@@ -9,7 +9,7 @@ function Registry() {
     return (
         <Container fluid>
             <Row>
-                <Col md={6} >
+                <Col lg={6} >
                     <Form className='registry_form'>
                         <div className='tab_form Option'>
                             <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
@@ -160,7 +160,7 @@ function Registry() {
 
                     </Form>
                 </Col>
-                <Col md={6} >
+                <Col lg={6} >
                     <Form className='registry_form  '>
                         <div className='tab_form overtime'>
                             <Form.Group className="mb-3 tab_form_" controlId="formBasicText">

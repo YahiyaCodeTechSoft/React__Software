@@ -92,3 +92,28 @@ textarea {
 .form_department .form .input_ {
     width: 100% !important;
 }
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .main_dashboard .form_department {
+        width: 100% !important;
+    }
+
+    .main_dashboard .cennt {
+        padding: 0  20px ;
+    }
+  }
+
+
+  @media only screen and (max-width: 656px) {
+    .main_dashboard .form_department .form .input_group {
+        flex-direction: column;
+    }
+
+    .main_dashboard .form_department .form .input_group div {
+        width: 100%;
+    }
+  }

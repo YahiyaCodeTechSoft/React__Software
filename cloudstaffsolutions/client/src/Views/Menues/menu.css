@@ -110,3 +110,25 @@ textarea {
 .menu_form .form .menuUrl {
     width: 100%;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .main_menu .menu_form {
+        width: 100% !important;
+    }
+
+    .main_menu .cennt {
+        padding: 0  20px ;
+    }
+  }
+
+
+  @media only screen and (max-width: 656px) {
+    .main_menu .menu_form .form .input_group {
+        flex-direction: column;
+    }
+
+    .main_menu .menu_form .form .input_group div {
+        width: 100%;
+    }
+  }

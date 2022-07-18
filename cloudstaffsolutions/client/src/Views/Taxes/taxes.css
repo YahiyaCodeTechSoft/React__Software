@@ -87,34 +87,6 @@ textarea {
     border-color: transparent;
 }
 
-/* .taxes_form .form .form_btn {
-    background-color: #000447;
-    border: none;
-} */
-
-
-/* .taxes_form .form .input_{
-    width: 100% !important;
-} */
-
-
-/* Input width */
-
-
-/* .taxes_form .form .taxid {
-    width: 15%;
-}
-
-.taxes_form .form .taxslab {
-    width: 15%;
-}
-
-
-.taxes_form .form .extraAmount {
-    width: 20%;
-} */
-
-
 .taxes_form .form .taxid,
 .taxes_form .form .taxslab,
 .taxes_form .form .extraAmount {
@@ -126,3 +98,25 @@ textarea {
 .taxes_form .form .maximum {
     width: 50%;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .main_taxes .taxes_form {
+        width: 100% !important;
+    }
+
+    .main_taxes .cennt {
+        padding: 0  20px ;
+    }
+  }
+
+
+  @media only screen and (max-width: 656px) {
+    .main_taxes .taxes_form .form .input_group {
+        flex-direction: column;
+    }
+
+    .main_taxes .taxes_form .form .input_group div {
+        width: 100%;
+    }
+  }

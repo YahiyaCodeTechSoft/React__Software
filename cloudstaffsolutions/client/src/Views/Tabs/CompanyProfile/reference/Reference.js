@@ -12,7 +12,7 @@ function Reference() {
   return (
     <Container fluid>
       <Row>
-        <Col md={12} >
+        <Col lg={12} >
           <Form className='reference_form'>
             <div className='tab_form policy'>
               <Form.Group className="mb-3 tab_form_" controlId="formBasicText">

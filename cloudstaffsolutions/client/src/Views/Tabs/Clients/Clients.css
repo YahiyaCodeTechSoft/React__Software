@@ -114,3 +114,37 @@
 }
 
 /* .Navv  */
+
+@media only screen and (max-width: 1114px)  {
+    .clients_main_tab .alertt {
+        width: 35%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .clients_main_tab .tabbs1 {
+        width: 100% !important;
+    }
+
+    .clients_main_tab .cennt {
+        padding: 5%  20px 5% 20px ;
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 650px) {
+    .clients_main_tab .alertt {
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 504px) {
+    .clients_main_tab .alertt {
+        width: 80%;
+    }
+  }

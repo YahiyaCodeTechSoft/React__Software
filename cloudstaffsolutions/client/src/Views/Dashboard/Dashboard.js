@@ -16,20 +16,20 @@ function Dashboard() {
 
                     <Container fluid>
                         <Row>
-                            <Col md={5} >
-                                <div className='sec'>
+                            <Col lg={5} >
+                                <div className='sec sec_'>
                                     <div className='head'>
                                         <label>Intouch</label>
                                     </div>
                                     <div className='body pe-2  ps-4 d-flex'>
-                                        <div className='body_inner my-2 w-25'>
+                                        <div className='body_inner my-2 w-50'>
                                             <h5>Created By Me</h5>
                                             <ListGroup variant="flush" as='ul' >
                                                 <ListGroup.Item as='li'>Overdue: 0</ListGroup.Item>
                                                 <ListGroup.Item as='li'>Pending: 0</ListGroup.Item>
                                             </ListGroup>
                                         </div>
-                                        <div className='body_inner my-2'>
+                                        <div className='body_inner my-2 w-50'>
                                             <h5>Assigned To Me</h5>
                                             <ListGroup variant="flush" as='ul'>
                                                 <ListGroup.Item as='li'>Overdue: 0</ListGroup.Item>
@@ -44,7 +44,7 @@ function Dashboard() {
                                     </div>
                                     <div className='body px-2 '>
                                         <div className='body_inner'>
-                                            <Table >
+                                            <Table responsive>
                                                 <thead>
                                                     <tr>
                                                         <th></th>
@@ -315,7 +315,7 @@ function Dashboard() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col md={7} >
+                            <Col lg={7} >
                                 <div className='sec des third third_'>
                                     <div className='head'>
                                         <label>Registry</label>

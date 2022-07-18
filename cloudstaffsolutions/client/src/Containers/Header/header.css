@@ -42,9 +42,10 @@
 }
 
 .navbar_ .list {
-  height: 100vh;
-  overflow: auto;
-  padding-bottom: 20px;
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* padding-bottom: 1000px; */
 }
 
 .navbar_ .list::-webkit-scrollbar-thumb {
@@ -53,16 +54,15 @@
 }
 
 .navbar_ .list::-webkit-scrollbar {
-  width: .5rem;
-  background-color: #000447;
+  width: .7rem;
+  background-color: #36454F;
 }
 
 
 .navbar_ .list li {
   border-bottom: 1px  solid #606060;
   background-color: transparent;
-    padding: 7px 0 7px 20px;
-    padding-left: 20px;
+    padding: 0;
     border-radius: 0 !important;
 }
 
@@ -89,19 +89,97 @@
 }
 .navbar_ .list li:last-child {
   border: none;
-}
-
-
-.navbar_:hover .list li {
-  padding: 7px 0 7px 20px;
   /* border-bottom: 1px  solid #606060; */
 }
 
-.navbar_ .list li:hover {
-  background-color: #536878;
 
+.navbar_ .list li .list_itemm {
+  padding: 7px 0 7px 20px;
+  white-space: nowrap;
+  
+}
+
+.navbar_ .list li .list_itemm i.fa-chevron-down {
+  font-size: 11px;
+  transition: .3s all;
+}
+.navbar_ .list li.open .list_itemm i.fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.navbar_ .list li .list_  {
+  transition: .3s ease;
+}
+
+.navbar_ .list li.open .list_  {
+  display: block !important;
+  overflow-x: hidden;
+}
+
+.navbar_ .list li.open .list_itemm {
+  height: auto;
+
+}
+
+.navbar_ .list li .list_itemm:hover,.navbar_ .list_ li:hover {
+  background-color: #536878;
 }
 
 .navbar_:hover .list li a  {
   gap: 2.2rem;
+}
+
+/* .navbar_ .list li .nestedList .list_{} */
+
+
+.navbar_ .list li .nestedList .list_ li  {
+  border: none;
+  padding: 5px;
+  padding-left: 26px !important;
+}
+
+.navbar_ .list li .nestedList .list_ li a i.fa-chevron-right  {
+  font-size: 12px;
+}
+
+.navbar_ .list li .nestedList .list_ li a span {
+  font-size: 14px;
+  border-bottom: 1px solid #606060;
+  /* white-space: nowrap; */
+  padding-bottom: 5px;
+}
+
+/* .navbar_ .list_ li a {
+  gap: 0.6rem !important;
+}
+
+.navbar_:hover .list_ li a {
+  gap: 0rem !important;
+} */
+
+.navbar_ .list li .nestedList .list_ li:first-child{
+  border-top: 1px solid #e7e8e8 !important;
+}
+.navbar_ .list li .nestedList .list_ li:last-child{
+  border-bottom: 1px solid #e7e8e8 !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar_:hover {
+    width: 4rem !important;
+  }
+
+  .navbar_:hover .logo img {
+    width: 100% !important;
+}
+
+/* .navbar_:hover .list_ li a {
+  gap: 0.6rem !important;
+} */
+
+.navbar_ .list li .nestedList .list_ li{
+  padding-left: 19px !important;
+}
+
 }

@@ -168,38 +168,24 @@
     width: 30%;
 }
 
-/* .home_form .form .Empid,
-.home_form .form .Empname,
-.home_form .form .Empidentity{
-    width: 33%;
-} */
 
-/* 
-.home_form .form .Empid,
-.home_form .form .ContactNum,
-.home_form .form .Empsalary,
-.home_form .form .Yearsalary,
-.home_form .form .Taxslab,
-.home_form .form .Taxamount,
-.home_form .form .Leaveincashment     {
-    width: 37%;
-}
+@media only screen and (max-width: 1000px) {
+    .main_home .home_form {
+        width: 100% !important;
+    }
 
-.home_form .form .Empname,
-.home_form .form .Empidentity,  
-.home_form .form .Emergcontactperson {
-    width: 55%;
-}
+    .main_home .cennt {
+        padding: 0  20px ;
+    }
+  }
 
-.home_form .form .Empdesignation,
-.home_form .form .Empadress {
-    width: 100%;
-}
 
-.home_form .form .Emergcontactnumber {
-    width: 60%;
-}
+  @media only screen and (max-width: 656px) {
+    .main_home .home_form .form .input_group {
+        flex-direction: column;
+    }
 
-.home_form .form  {
-    width: 100%;
-} */
+    .main_home .home_form .form .input_group div {
+        width: 100%;
+    }
+  }
