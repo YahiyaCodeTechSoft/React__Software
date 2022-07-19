@@ -9,10 +9,13 @@ import Taxes from "./Views/Taxes/taxes";
 import User from "./Views/Users/User";
 import Menu from "./Views/Menues/menu";
 import Navigation from './Containers/Header/Header';
-import NavigationTop from './Containers/HeaderTop/headerTop';
+// import NavigationTop from './Containers/HeaderTop/headerTop';
 import CompanyProfile from './Views/Tabs/CompanyProfile/CompanyProfile';
 import Clients from './Views/Tabs/Clients/Clients';
 import Dashboard from './Views/Dashboard/Dashboard';
+import UserProfileTable from './Views/Table/UsersTable/UserProfileTable';
+import ClientTable from './Views/Table/ClientTable/ClientTable';
+import Support from './Views/Support/Support';
 import Error from './Error'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -54,6 +57,7 @@ function App() {
 
               <Route  path="/" element={<UserProfile />} />
             <Route  path="/dashboard" element={<Dashboard />} />
+            <Route  path="/support" element={<Support />} />
             <Route path="/home" element={<Home />} />
             <Route path="/department" element={<Department />} />
             <Route path="/taxes" element={<Taxes />} />
@@ -61,6 +65,8 @@ function App() {
             <Route path="/user" element={<User />} />
             <Route path ="/companyProfile" element={<CompanyProfile />} />
             <Route path ="/clients" element={<Clients />} />
+            <Route path ="/userProfileTable" element={<UserProfileTable />} />
+            <Route path ="/clientTable" element={<ClientTable />} />
             <Route path="*" element={<Error />} />
 
             </Routes>

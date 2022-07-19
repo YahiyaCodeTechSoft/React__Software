@@ -1,5 +1,6 @@
 import React from "react";
-import { Form, Button, Alert, Row, Col, ButtonGroup } from 'react-bootstrap';
+import Select from 'react-select'
+import { Form, Alert, Row, Col, Container } from 'react-bootstrap';
 import NavigationTop from '../../Containers/HeaderTop/headerTop'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './user.css'
@@ -11,149 +12,111 @@ function User() {
             <NavigationTop />
 
             <div className='cennt mt-5'>
-                <div className="user_form m-auto w-50">
-                    <Alert className="text-center fs-4 m-0   alertt">
-                        Users
+                <div className="w-75 m-auto">
+                    <Alert className="text-center m-0 alertt">
+                        User Details
                     </Alert>
-                    <Row>
-
-                        <Col md={12}>
-                            <Form className="form py-3 px-2 w-75 m-auto ">
-                                {/* <div className="input_group d-flex align-items-center justify-content-between gap-2"> */}
-                                <Form.Group className="mb-2 name" controlId="formBasicEmail">
-                                    <Form.Label >Name</Form.Label>
-                                    <Form.Control type="text" placeholder="Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-2 email" controlId="formBasicEmail">
-                                    <Form.Label>Email</Form.Label>
-                                    <Form.Control type="text" placeholder="Email" />
-                                </Form.Group>
-                                <Form.Group className="mb-2  password" controlId="formBasicEmail">
-                                    <Form.Label>Password</Form.Label>
-                                    <Form.Control type="text" placeholder="Password" />
-                                </Form.Group>
-                                {/* </div> */}
-
-
-
-
-
-                                <Button className="form_btn mt-2 w-100" type="submit">
-                                    Submit
-                                </Button>
-                            </Form>
-                        </Col>
-                        <Col md={12}>
-                            <div className="showList py-3 px-3">
-                                <div className="head">
-                                    <h5>Users</h5>
-                                </div>
-
-                                <div className="body">
-                                    <ul className="list">
-                                        <li className="d-flex gap-4 align-items-end">
-
-                                            <div className="img">
-                                                <img src="http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" alt='profile' />
+                    <Container fluid className="user_form">
+                        <Row>
+                            <Col lg={6} >
+                                <Form className='user_form2'>
+                                    <div className='tab_form override'>
+                                        <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
+                                            <Form.Label className='m-0 pb-1'>Credential Status Override</Form.Label>
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>User Name:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                    <Form.Control type="text"  className="w-75" />
+                                                </div>
                                             </div>
-                                            <div className="text d-flex align-items-center justify-content-between">
-                                                <p className="m-0">User1</p>
-                                                <span className="m-0">user@gmail.com</span>
-                                                <ButtonGroup aria-label="Basic example">
-                                                    <Button variant="secondary" className="m-2 me-0">Edit</Button>
-                                                    <Button variant="secondary" className="m-2 mx-0">Delete</Button>
-                                                </ButtonGroup>
+
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>User Login:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                    <Form.Control type="text"  className="w-75" />
+                                                </div>
                                             </div>
-                                        </li>
 
-                                        <li className="d-flex gap-4 align-items-end">
-
-                                            <div className="img">
-                                                <img src="http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" alt='profile' />
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>Email:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                    <Form.Control type="email"  className="w-75" />
+                                                </div>
                                             </div>
-                                            <div className="text d-flex align-items-center justify-content-between">
-                                                <p className="m-0">User1</p>
-                                                <span className="m-0">user@gmail.com</span>
-                                                <ButtonGroup aria-label="Basic example">
-                                                    <Button variant="secondary" className="m-2 me-0">Edit</Button>
-                                                    <Button variant="secondary" className="m-2 mx-0">Delete</Button>
-                                                </ButtonGroup>
+
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>Main Phone:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                    <Form.Control type="text"  className="w-75" />
+                                                </div>
                                             </div>
-                                        </li>
 
-                                        <li className="d-flex gap-4 align-items-end">
-
-                                            <div className="img">
-                                                <img src="http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" alt='profile' />
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>Mobille Phone:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                    <Form.Control type="text"  className="w-75" />
+                                                </div>
                                             </div>
-                                            <div className="text d-flex align-items-center justify-content-between">
-                                                <p className="m-0">User1</p>
-                                                <span className="m-0">user@gmail.com</span>
-                                                <ButtonGroup aria-label="Basic example">
-                                                    <Button variant="secondary" className="m-2 me-0">Edit</Button>
-                                                    <Button variant="secondary" className="m-2 mx-0">Delete</Button>
-                                                </ButtonGroup>
+
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>Password:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                    <Form.Control type="password"  className="w-75" />
+                                                </div>
                                             </div>
-                                        </li>
 
-                                        <li className="d-flex gap-4 align-items-end">
-
-                                            <div className="img">
-                                                <img src="http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" alt='profile' />
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>Retype Password:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                    <Form.Control type="password"  className="w-75" />
+                                                </div>
                                             </div>
-                                            <div className="text d-flex align-items-center justify-content-between">
-                                                <p className="m-0">User1</p>
-                                                <span className="m-0">user@gmail.com</span>
-                                                <ButtonGroup aria-label="Basic example">
-                                                    <Button variant="secondary" className="m-2 me-0">Edit</Button>
-                                                    <Button variant="secondary" className="m-2 mx-0">Delete</Button>
-                                                </ButtonGroup>
+
+
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>User Status:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                <Form.Select className="w-25">
+                                                        <option>Active</option>
+                                                    </Form.Select>
+                                                </div>
                                             </div>
-                                        </li>
 
-                                        <li className="d-flex gap-4 align-items-end">
-
-                                            <div className="img">
-                                                <img src="http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" alt='profile' />
+                                            <div className='inner_ d-flex'>
+                                                <div className='right w-25'>
+                                                    <Form.Label>User Type:</Form.Label>
+                                                </div>
+                                                <div className='py-1 px-2 left w-75'>
+                                                <Select className="w-100">
+                                                    </Select>
+                                                </div>
                                             </div>
-                                            <div className="text d-flex align-items-center justify-content-between">
-                                                <p className="m-0">User1</p>
-                                                <span className="m-0">user@gmail.com</span>
-                                                <ButtonGroup aria-label="Basic example">
-                                                    <Button variant="secondary" className="m-2 me-0">Edit</Button>
-                                                    <Button variant="secondary" className="m-2 mx-0">Delete</Button>
-                                                </ButtonGroup>
-                                            </div>
-                                        </li>
 
-                                        <li className="d-flex gap-4 align-items-end">
+                                           
 
-                                            <div className="img">
-                                                <img src="http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" alt='profile' />
-                                            </div>
-                                            <div className="text d-flex align-items-center justify-content-between">
-                                                <p className="m-0">User1</p>
-                                                <span className="m-0">user@gmail.com</span>
-                                                <ButtonGroup aria-label="Basic example">
-                                                    <Button variant="secondary" className="m-2 me-0">Edit</Button>
-                                                    <Button variant="secondary" className="m-2 mx-0">Delete</Button>
-                                                </ButtonGroup>
-                                            </div>
-                                        </li>
-
-
-
-                                    </ul>
-
-
-                                </div>
-
-                            </div>
-                        </Col>
-
-
-
-                    </Row>
+                                        </Form.Group>
+                                    </div>
+                                </Form>
+                            </Col>
+                           
+                        </Row>
+                    </Container>
                 </div>
             </div>
         </main>

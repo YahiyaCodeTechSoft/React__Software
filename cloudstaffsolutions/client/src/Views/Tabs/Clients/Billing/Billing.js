@@ -12,7 +12,7 @@ function Billing() {
   return (
     <Container fluid>
       <Row>
-        <Col lg={6}>
+        <Col md={6}>
           <Form className="reference_form">
             <div className="tab_form policy">
               <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
@@ -136,7 +136,7 @@ function Billing() {
           </Form>
         </Col>
 
-        <Col lg = {6}>
+        <Col md = {6}>
         <Form className="reference_form">
             <div className="tab_form policy">
             <Form.Group className="tab_form_" controlId="formBasicText">

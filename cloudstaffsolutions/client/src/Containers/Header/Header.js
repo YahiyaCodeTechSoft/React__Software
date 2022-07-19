@@ -27,7 +27,7 @@ function Navigation() {
         </ListGroup.Item>
         <ListGroup.Item as='li'>
           <div className="d-flex justify-content-between align-items-center list_itemm ">
-            <NavLink to="/clients"><i className="fa-solid fa-user"></i> <span> Clients </span> </NavLink>
+            <NavLink to="/clientTable"><i className="fa-solid fa-user"></i> <span> Clients </span> </NavLink>
           </div>
         </ListGroup.Item>
         <ListGroup.Item as='li'>
@@ -87,7 +87,7 @@ function Navigation() {
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-chevron-right"></i> <span> Branches </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-chevron-right"></i> <span> Regions </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-chevron-right"></i> <span> Security Groups </span> </NavLink></ListGroup.Item>
-              <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-chevron-right"></i> <span> Users </span> </NavLink></ListGroup.Item>
+              <ListGroup.Item as='li'><NavLink to="/userProfileTable"> <i className="fa-solid fa-chevron-right"></i> <span> Users </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-chevron-right"></i> <span> Burden Groups </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-chevron-right"></i> <span> Credentials </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-chevron-right"></i> <span> Disciplines </span> </NavLink></ListGroup.Item>
