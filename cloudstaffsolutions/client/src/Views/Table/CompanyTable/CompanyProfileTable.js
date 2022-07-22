@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import { Table, Pagination, Navbar, Container, Nav,Form } from 'react-bootstrap';
 import NavigationTop from '../../../Containers/HeaderTop/headerTop'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './ClientTable.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './companyTable.css'
 
-function UserProfileTable() {
+function CompanyProfileTable() {
     return (
-        <main className="main_clientTable">
+        <main className="main_companyProfileTable">
 
             <NavigationTop />
 
@@ -14,10 +14,10 @@ function UserProfileTable() {
 
             <div className='cennt mt-5'>
 
-                <div className="clienttable_feild  w-100 mx-4 p-2">
+                <div className="companyProfiletable_feild  w-100 mx-4 p-2">
                     <div className='sec des'>
                         <div className='head d-flex align-items-center justify-content-between'>
-                            <div><label> All Clients </label></div>
+                            <div><label> Company Profile </label></div>
                             <div><AdvancedExample /></div>
                         </div>
                         <div className='body'>
@@ -143,9 +143,9 @@ function Navv() {
                     className=" my-2 my-lg-0 d-flex align-items-center "
                     navbarScroll
                 >
-                    <Nav.Link href="/clients" className='py-1 px-3'><i class="fa-solid fa-square-plus"></i>  New </Nav.Link>
+                    <Nav.Link href="/companyProfile" className='py-1 px-3'><i class="fa-solid fa-square-plus"></i>  New </Nav.Link>
                     <Nav.Link href="#action2" className='py-1 px-3'><i class="fa-solid fa-pen-to-square"></i> Edit</Nav.Link>
-                    <Nav.Link href="/clientTable" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
+                    <Nav.Link href="/companyProfileTable" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
                 </Nav>
 
             </Container>
@@ -153,5 +153,4 @@ function Navv() {
     );
 }
 
-
-export default UserProfileTable;
+export default CompanyProfileTable

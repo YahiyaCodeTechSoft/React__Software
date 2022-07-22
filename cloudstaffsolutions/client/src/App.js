@@ -3,7 +3,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 import UserProfile from './Views/Auth/UserProfile';
-import Home from './Views/EmployeeProfile/employeeProfile';
+import EmployeeProfile from './Views/EmployeeProfile/employeeProfile';
 import Department from './Views/Departments/department';
 import Taxes from "./Views/Taxes/taxes";
 import User from "./Views/Users/User";
@@ -12,9 +12,12 @@ import Navigation from './Containers/Header/Header';
 // import NavigationTop from './Containers/HeaderTop/headerTop';
 import CompanyProfile from './Views/Tabs/CompanyProfile/CompanyProfile';
 import Clients from './Views/Tabs/Clients/Clients';
+import AllBranches from './Views/Tabs/AllBranches/AllBranches';
 import Dashboard from './Views/Dashboard/Dashboard';
 import UserProfileTable from './Views/Table/UsersTable/UserProfileTable';
 import ClientTable from './Views/Table/ClientTable/ClientTable';
+import EmployeeTable from './Views/Table/EmployeeTable/EmployeeTable';
+import CompanyProfileTable from './Views/Table/CompanyTable/CompanyProfileTable';
 import Support from './Views/Support/Support';
 import Error from './Error'
 import './App.css';
@@ -58,15 +61,18 @@ function App() {
               <Route  path="/" element={<UserProfile />} />
             <Route  path="/dashboard" element={<Dashboard />} />
             <Route  path="/support" element={<Support />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/employee" element={<EmployeeProfile />} />
             <Route path="/department" element={<Department />} />
             <Route path="/taxes" element={<Taxes />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/user" element={<User />} />
             <Route path ="/companyProfile" element={<CompanyProfile />} />
             <Route path ="/clients" element={<Clients />} />
+            <Route path ="/allBranches" element={<AllBranches />} />
             <Route path ="/userProfileTable" element={<UserProfileTable />} />
             <Route path ="/clientTable" element={<ClientTable />} />
+            <Route path ="/employeeTable" element={<EmployeeTable />} />
+            <Route path ="/companyProfileTable" element={<CompanyProfileTable />} />
             <Route path="*" element={<Error />} />
 
             </Routes>

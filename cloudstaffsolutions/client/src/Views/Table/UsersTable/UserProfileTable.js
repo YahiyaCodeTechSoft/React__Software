@@ -82,8 +82,6 @@ function UserProfileTable() {
 function AdvancedExample() {
     return (
         <Pagination>
-            <Pagination.First />
-            <Pagination.Prev />
             <Pagination.Item active>{1}</Pagination.Item>
             {/* <Pagination.Ellipsis /> */}
 
@@ -92,7 +90,8 @@ function AdvancedExample() {
             <Pagination.Item >{4}</Pagination.Item>
             <Pagination.Item>{5}</Pagination.Item>
             {/* <Pagination.Item disabled>{14}</Pagination.Item> */}
-            <Pagination.Item>{6}</Pagination.Item>
+            <Pagination.First />
+            <Pagination.Prev />
             <Pagination.Next />
             <Pagination.Last />
         </Pagination>
@@ -109,7 +108,7 @@ function Navv() {
                 >
                     <Nav.Link href="/user" className='py-1 px-3'><i class="fa-solid fa-square-plus"></i>  New </Nav.Link>
                     <Nav.Link href="#action2" className='py-1 px-3'><i class="fa-solid fa-pen-to-square"></i> Edit</Nav.Link>
-                    <Nav.Link href="#action2" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
+                    <Nav.Link href="/userProfileTable" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
                 </Nav>
 
             </Container>

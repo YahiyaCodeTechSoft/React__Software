@@ -15,7 +15,7 @@
 }
 
 .navbar_:hover {
-  width: 15%;
+  width: 20%;
   max-width: 40rem;
 }
 
@@ -98,7 +98,6 @@
   white-space: nowrap;
   
 }
-
 .navbar_ .list li .list_itemm i.fa-chevron-down {
   font-size: 11px;
   transition: .3s all;
@@ -135,7 +134,13 @@
 .navbar_ .list li .nestedList .list_ li  {
   border: none;
   padding: 5px;
+  padding-left: 18px !important;
+  white-space: nowrap;  
+}
+
+.navbar_:hover .list li .nestedList .list_ li {
   padding-left: 26px !important;
+  /* white-space: initial !important;   */
 }
 
 .navbar_ .list li .nestedList .list_ li a i.fa-chevron-right  {

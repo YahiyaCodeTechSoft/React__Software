@@ -339,16 +339,15 @@ function Credit() {
               <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
                 <Form.Label className="m-0 pb-1">Printing Options</Form.Label>
                 <div className="inner_ d-flex align-items-center">
-                <div className="py-1 px-2 left">
+                <div className="py-1 px-2 left w-25">
                     <Form.Check
-                      className="d-flex align-items-center"
+                      className=""
                       type="checkbox"
                     />
-                    {/* <Form.Control type="text" placeholder="30"  /> */}
                   </div>
-                  <div className="right">
-                    <Form.Label style = {{whiteSpace: 'nowrap', position: 'relative', right: '116px', fontSize: '8px', top: '10px'}}>Warn if approaching credit limit within:</Form.Label>
-                    <Form.Control style = {{position: 'relative', top: '-12px', width: '60%', right: '-40px'}} type = "text"></Form.Control>
+                  <div className="right d-flex align-items-center w-75">
+                    <Form.Label >Warn if approaching credit limit within:</Form.Label>
+                    <Form.Control  type = "text"></Form.Control>
                   </div>
                   
                 </div>

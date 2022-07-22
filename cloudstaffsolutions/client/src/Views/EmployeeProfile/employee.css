@@ -168,6 +168,42 @@
     width: 30%;
 }
 
+.home_form .form .form_file {
+    /* width: 30%; */
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+
+/* .Navv  */
+
+.main_home .navv {
+    width: 100%;
+    border-top: 1px solid #dee2e6;
+    background-color: #36454F;
+    z-index: 9;
+    padding: 0;
+    
+}
+
+.main_home .navv .navbar-nav a {
+    color: #fff;
+    font-size: 12px;
+    padding: 0;
+}
+
+.main_home .navv a:hover,
+.main_home .navv a:active,
+.main_home .navv a:focus,
+.main_home .navv .navbar-nav a:hover,
+.main_home .navv .navbar-nav a:active,
+.main_home .navv .navbar-nav a:focus {
+    color: #fff !important; 
+
+}
+
+/* .Navv  */
+
 
 @media only screen and (max-width: 1000px) {
     .main_home .home_form {

@@ -15,11 +15,12 @@
 
 
 .user_form {
-    /* width: 40%; */
+    /* height: 400px; */
     height: fit-content;
     border-radius: 0.25rem;
     box-shadow: 0.5px .5px 3px #000;
     overflow: hidden;
+    
 }
 
 .main_user .alertt {
@@ -85,9 +86,14 @@
     border-radius: 3px;
 }
 
+.user_form2 .tab_form select{
+    padding: 1px 35px 1px 10px;
+}
+
+
 .user_form2 .tab_form .form-check-input{
     background-color: #fff !important;
-    padding: 7px   ;
+    padding: 7px ;
 }   
 
 
@@ -100,6 +106,8 @@
     margin: 0;
 }
 
+
+
 .user_form2 .tab_form input::placeholder,.user_form2 .tab_form select::placeholder{
     /* color: #fff; */
     color: #000;
@@ -110,6 +118,10 @@
     border-color: #ced4da;
     background-color: #fff;
     color: #000;
+}
+
+.user_form .tab_form .css-1s2u09g-control,.user_form .tab_form .css-1s2u09g-control:hover {
+    font-size: 12px !important;
 }
 
 .user_form2 .tab_form .inner_ label {
@@ -133,11 +145,14 @@
 }
 
 
-.user_form2 .tab_form.overtime label:last-child {
+.user_form2 .tab_form .overtime label:last-child {
     border-bottom: none;
     font-weight: 500;
+    text-align: start !important;
     background-color: #fff;
 }
+
+/* .user_form2 .tab_form.overtime  */
 
 .user_form2 .tab_form.policy label:last-child {
     border-top: 1px solid #ced4da;
@@ -259,3 +274,33 @@
     background-color: #fff;
     /* display: none; */
 }
+
+
+/* .Navv  */
+
+.main_user .navv {
+    width: 100%;
+    border-top: 1px solid #dee2e6;
+    background-color: #36454F;
+    z-index: 9;
+    padding: 0;
+    
+}
+
+.main_user .navv .navbar-nav a {
+    color: #fff;
+    font-size: 12px;
+    padding: 0;
+}
+
+.main_user .navv a:hover,
+.main_user .navv a:active,
+.main_user .navv a:focus,
+.main_user .navv .navbar-nav a:hover,
+.main_user .navv .navbar-nav a:active,
+.main_user .navv .navbar-nav a:focus {
+    color: #fff !important; 
+
+}
+
+/* .Navv  */
