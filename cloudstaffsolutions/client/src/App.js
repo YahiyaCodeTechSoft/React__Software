@@ -18,6 +18,7 @@ import UserProfileTable from './Views/Table/UsersTable/UserProfileTable';
 import ClientTable from './Views/Table/ClientTable/ClientTable';
 import EmployeeTable from './Views/Table/EmployeeTable/EmployeeTable';
 import CompanyProfileTable from './Views/Table/CompanyTable/CompanyProfileTable';
+import BranchTable from './Views/Table/branchTable/BranchTable';
 import Support from './Views/Support/Support';
 import Error from './Error'
 import './App.css';
@@ -73,6 +74,7 @@ function App() {
             <Route path ="/clientTable" element={<ClientTable />} />
             <Route path ="/employeeTable" element={<EmployeeTable />} />
             <Route path ="/companyProfileTable" element={<CompanyProfileTable />} />
+            <Route path ="/branchTable" element={<BranchTable />} />
             <Route path="*" element={<Error />} />
 
             </Routes>
