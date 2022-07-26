@@ -56,8 +56,8 @@
           <div className="d-flex justify-content-between align-items-center list_itemm " onClick={() => { setOpen(!open); }}>
             <NavLink to="#"><i class="fa-solid fa-user-lock"></i> <span> Admin  </span>
             </NavLink>
-            {/* <i className="fa-solid fa-chevron-up me-3 text-white" onClick={() => setOpen(!open)}></i> */}
-            <i className="fa-solid fa-chevron-down me-3 text-white" ></i>
+            <i className="fa-solid fa-chevron-up me-3 text-white" onClick={() => setOpen(!open)}></i>
+            {/* <i className="fa-solid fa-chevron-down me-3 text-white" ></i> */}
           </div>
           <div className="nestedList ">
             <ListGroup as='ul' className="list_ d-none">
@@ -74,7 +74,7 @@
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-table-columns"></i> <span> Earning Deducation Codes </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-table-columns"></i> <span> Email History </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-table-columns"></i> <span> G/L Accounts </span> </NavLink></ListGroup.Item>
-              <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-table-columns"></i> <span> Holidays </span> </NavLink></ListGroup.Item>
+              <ListGroup.Item as='li'><NavLink to="/holidayTable"> <i className="fa-solid fa-table-columns"></i> <span> Holidays </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-table-columns"></i> <span> Intouch Templates </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-table-columns"></i> <span> Invoice Formats </span> </NavLink></ListGroup.Item>
               <ListGroup.Item as='li'><NavLink to="/"> <i className="fa-solid fa-table-columns"></i> <span> Invoice Profile </span> </NavLink></ListGroup.Item>

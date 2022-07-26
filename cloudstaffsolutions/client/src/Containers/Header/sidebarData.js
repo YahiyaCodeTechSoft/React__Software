@@ -87,6 +87,16 @@ export const sidebarData = [
         heading: "Users",
         path: "/userProfileTable",
     },
+    {
+        icon: "fa-users",
+        heading: "Holiday",
+        path: "/holidayTable",
+    },
+    {
+        icon: "fa-users",
+        heading: "Paid Leave Policy",
+        path: "/paidLeaveTable",
+    },
     
 
 ];
