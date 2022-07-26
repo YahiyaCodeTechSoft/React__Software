@@ -53,7 +53,8 @@ export const sidebarData = [
         icon: "fa-user-lock",
         heading: "Admin",
         path: "#",
-        showicon1: "fa-fa-chevron-down",
+        // showicon1: "fa-fa-chevron-down me-3 text-white",
+        showicon1: "fa-chevron-down",
         showicon2: "me-3",
         showicon3: "text-white",
         innerchild: [{

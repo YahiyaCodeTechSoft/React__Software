@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Form, Button, Alert, Col, Row,Container,Nav,Navbar } from 'react-bootstrap';
+import { Form, Button, Alert, Col, Row, Container, Nav, Navbar } from 'react-bootstrap';
 import NavigationTop from '../../Containers/HeaderTop/headerTop'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './employee.css'
@@ -146,9 +146,9 @@ function EmployeeProfile() {
 
             <Form.Group className="mb-1  mt-2">
               <Form.Label className="">Employee Status</Form.Label>
-                <Row className="align-items-center">
-                  <Col lg={5} className="">
-              <div className="d-flex mx-5 gap-2">
+              <Row className="align-items-center">
+                <Col lg={5} className="">
+                  <div className="d-flex mx-5 gap-2">
                     <Form.Check className="form_check"
                       name="empStatus" type="radio"
                       label="Online"
@@ -159,12 +159,12 @@ function EmployeeProfile() {
                       label="Offline"
                       id="formHorizontalRadios1"
                     />
-                    </div>
-                  </Col>
-                  <Col lg={7}>
-                  <Form.Control type="file" size="lg" className="form_file"  />
+                  </div>
                 </Col>
-                </Row>
+                <Col lg={7}>
+                  <Form.Control type="file" size="lg" className="form_file" />
+                </Col>
+              </Row>
             </Form.Group>
 
 
@@ -180,19 +180,20 @@ function EmployeeProfile() {
 
 function Navv() {
   return (
-      <Navbar expand="lg" className="navbar navv">
-          <Container fluid className="mx-3">
-              <Nav
-                  className=" my-2 my-lg-0 d-flex align-items-center "
-                  navbarScroll
-              >
-                  <Nav.Link href="/employee" className='py-1 px-3'><i class="fa-solid fa-square-plus"></i>  New </Nav.Link>
-                  <Nav.Link href="#action2" className='py-1 px-3'><i class="fa-solid fa-pen-to-square"></i> Edit</Nav.Link>
-                  <Nav.Link href="/employeeTable" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
-              </Nav>
+    <Navbar expand="lg" className="navbar navv">
+      <Container fluid className="mx-3">
+        <Nav
+          className=" my-2 my-lg-0 d-flex align-items-center "
+          navbarScroll
+        >
+          {/* <Nav.Link href="/employee" className='py-1 px-3'><i class="fa-solid fa-square-plus"></i>  New </Nav.Link>
+          <Nav.Link href="#action2" className='py-1 px-3'><i class="fa-solid fa-pen-to-square"></i> Edit</Nav.Link> */}
+          <Nav.Link href="/employeeTable" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
+          <Nav.Link href="/employeeTable" className='py-1 px-3'><i class="fa-solid fa-xmark"></i> cancel</Nav.Link>
+        </Nav>
 
-          </Container>
-      </Navbar>
+      </Container>
+    </Navbar>
   );
 }
 

@@ -7,7 +7,7 @@ import Invoicing from './Invoicing/Invoicing';
 import Credits from './Credit/Credit';
 import Holidays from './Holidays/Holidays';
 import Instructions from './Instructions/Instructions';
-import NavigationTop from '../../../Containers/HeaderTop/headerTop'
+import NavigationTop from '../../../Containers/HeaderTop/headerTop';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Clients.css'
 
@@ -64,9 +64,10 @@ function Navv() {
                     className=" my-2 my-lg-0 d-flex align-items-center "
                     navbarScroll
                 >
-                    <Nav.Link href="/clients" className='py-1 px-3'><i class="fa-solid fa-square-plus"></i>  New </Nav.Link>
-                    <Nav.Link href="#action2" className='py-1 px-3'><i class="fa-solid fa-pen-to-square"></i> Edit</Nav.Link>
+                    {/* <Nav.Link href="/clients" className='py-1 px-3'><i class="fa-solid fa-square-plus"></i>  New </Nav.Link>
+                    <Nav.Link href="#action2" className='py-1 px-3'><i class="fa-solid fa-pen-to-square"></i> Edit</Nav.Link> */}
                     <Nav.Link href="/clientTable" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
+                    <Nav.Link href="/clientTable" className='py-1 px-3'><i class="fa-solid fa-xmark"></i> cancel</Nav.Link>
                 </Nav>
 
             </Container>

@@ -1,58 +1,68 @@
-import React from "react";
-import { Row, Col, Container, Form } from "react-bootstrap";
-import "./Client.css"
+import React, { useState } from "react";
+import { Container, Col, Row, Form, FloatingLabel } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Client.css";
 
 function Client() {
+  // const [selects, setSelects] = useState();
+
+  // const eventCall = (e) => {
+  //   setSelects(e.target.value);
+  // }
   return (
     <Container fluid>
       <Row>
-        <Col md={6}>
-          <Form className="education_form">
+      <Col md = {6}>
+        <Form className="reference_form">
             <div className="tab_form policy">
-              <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
-                <Form.Label className="m-0 pb-1">Physical Address</Form.Label>
+            <Form.Group className="tab_form_" controlId="formBasicText">
+                <Form.Label className="m-0 pb-1">
+                  Week Paramters
+                </Form.Label>
 
                 <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>Address1:</Form.Label>
+                  <div className="right" style={{ width: "10%" , display: 'contents'}}>
+                  <div className="w-100" style={{display: 'block', borderRight: '1px solid darkgray'}}>
+                  <Form.Label style = {{fontSize: '10px', whiteSpace: 'nowrap'}}>Week Start Time:</Form.Label>
                   </div>
                   <div className="py-1 px-2 left ">
-                    <div className="w-100">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
                       <Form.Control type="text" />
                     </div>
                   </div>
-                </div>
+                  </div>
 
-                <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>Address2:</Form.Label>
+                  
+
+                  <div className="right" style={{ width: "25%" }}>
+                    <Form.Label>Day:</Form.Label>
                   </div>
                   <div className="py-1 px-2 left ">
-                    <div className="w-100">
-                      <Form.Control type="text" />
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                    <Form.Select>
+                        <option></option>
+                        <option>Disable Option</option>
+                        <option>Disable Option</option>
+                        <option>Disable Option</option>
+                      </Form.Select>
+                    </div>
+                  </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>City:</Form.Label>
+                  <div className="right" style={{ width: "37%", whiteSpace: 'nowrap' }}>
+                    <Form.Label style = {{fontSize: '10px'}}>Overtime Rule:</Form.Label>
                   </div>
                   <div className="py-1 px-2 left ">
-                    <div className="w-50">
-                      <Form.Control type="text" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>State:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left ">
-                    <div className="w-50">
-                      <Form.Select>
-                        <option>Alberta</option>
+                    <div>
+                      <Form.Select
+                        style={{ display: "inlineBlock"}}
+                      >
+                        <option>Standard 40</option>
                         <option>Disable Option</option>
                         <option>Disable Option</option>
                         <option>Disable Option</option>
@@ -62,24 +72,30 @@ function Client() {
                 </div>
 
                 <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>Zip:</Form.Label>
+                  <div className="right" style={{ width: "37%" }}>
+                    <Form.Label style = {{whiteSpace: 'nowrap', fontSize:'12px'}}>Oncall Rule:</Form.Label>
                   </div>
                   <div className="py-1 px-2 left ">
-                    <div className="w-50">
-                      <Form.Control type="text" />
+                    <div className="w-75" style = {{display: 'flex'}}>
+                      <Form.Check
+                        className="d-flex align-items-center gap-2 p-0"
+                        type="checkbox"
+                      />
+                      <p style = {{margin: '2px'}}>Overtime Collection</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>Location Code:</Form.Label>
+                  <div className="right" style={{ width: "37%", whiteSpace: 'nowrap' }}>
+                    <Form.Label style = {{fontSize: '10px'}}>Overtime Rule:</Form.Label>
                   </div>
                   <div className="py-1 px-2 left ">
-                    <div className="w-75">
-                      <Form.Select>
-                        <option>Alberta</option>
+                    <div>
+                      <Form.Select
+                        style={{ display: "inlineBlock"}}
+                      >
+                        <option></option>
                         <option>Disable Option</option>
                         <option>Disable Option</option>
                         <option>Disable Option</option>
@@ -87,205 +103,379 @@ function Client() {
                     </div>
                   </div>
                 </div>
-
-                <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>Muncipality:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left ">
-                    <div className="w-75">
-                      <Form.Select>
-                        <option>Alberta</option>
-                        <option>Disable Option</option>
-                        <option>Disable Option</option>
-                        <option>Disable Option</option>
-                      </Form.Select>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>School District:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left ">
-                    <div className="w-75">
-                      <Form.Select>
-                        <option>Alberta</option>
-                        <option>Disable Option</option>
-                        <option>Disable Option</option>
-                        <option>Disable Option</option>
-                      </Form.Select>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>GeoLocation:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left ">
-                    <div className="w-75">
-                      <Form.Label>
-                        <div
-                          className="div_text"
-                          style={{
-                            alignItems: "center",
-                            justifyContent: "space-between",
-                            display: "flex",
-                          }}
-                        >
-                          <p>Latitude:</p>
-                          <p>Longitude:</p>
-                        </div>
-                      </Form.Label>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <Form.Label>Paid Leave:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left ">
-                    <div className="w-75">
-                      <Form.Select>
-                        <option>Alberta</option>
-                        <option>Disable Option</option>
-                        <option>Disable Option</option>
-                        <option>Disable Option</option>
-                      </Form.Select>
-                    </div>
-                  </div>
-                </div>
-                {/* <Form.Label>Set Value to zero (0) to disable enforcement of a password policy</Form.Label> */}
               </Form.Group>
             </div>
           </Form>
-
-          <Form className="education_form">
-            <div className="tab_form policy">
-              <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
-                <Form.Label className="m-0 pb-1">FICA Exempt Pension Plan</Form.Label>
-
-                <div className="inner_ d-flex">
-                  <div className="right w-50">
-                    <div className="div_check" style = {{display: 'flex', alignItems: 'center',justifyContent: 'center',marginTop: '25px'}}>
-                  <Form.Check
-                      className="d-flex align-items-center"
-                      type="checkbox"
-                    />
-                    <p>FICA Exempt</p>
-                    </div>
-                  </div>
-                  <div className="left">
-                    <div className="w-100">
-                      <p>When enabled, users are presented with an optional field allowing them to change the payroll location used when paying paid leave.</p>
-                    </div>
-                  </div>
-                </div>
-                {/* <Form.Label>Set Value to zero (0) to disable enforcement of a password policy</Form.Label> */}
-              </Form.Group>
-            </div>
-          </Form>
-
-        
         </Col>
 
-        <Col md={6}>
-          <Form className="education_form">
+        <Col md = {6}>
+        <Form className="reference_form">
             <div className="tab_form policy">
-              <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
-                <Form.Label className="m-0 pb-1">Billing Address</Form.Label>
-                <div className="inner_ d-flex align-items-center">
-                  <div className="right w-25">
-                    <Form.Label>Name:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left">
-                    <div className="w-100">
-                      <Form.Control type="text" style={{ width: "100%" }} />
-                    </div>
-                    {/* <Form.Check className='d-flex align-items-center' type="checkbox"  /> */}
-                  </div>
-                </div>
-
-                <div className="inner_ d-flex align-items-center">
-                  <div className="right w-25">
-                    <Form.Label>Attn:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left">
-                    <div className="w-100">
-                      <Form.Control type="text" />
-                    </div>
-                    {/* <Form.Check className='d-flex align-items-center' type="checkbox"  /> */}
-                  </div>
-                </div>
+            <Form.Group className="tab_form_" controlId="formBasicText">
+                <Form.Label className="m-0 pb-1">
+                  Week Paramters
+                </Form.Label>
 
                 <div className="inner_ d-flex">
-                  <div className="right w-25">
-                    <Form.Label>Address1:</Form.Label>
+                  <div className="right" style={{ width: "10%" , display: 'contents'}}>
+                  <div className="w-100" style={{display: 'block', borderRight: '1px solid darkgray'}}>
+                  <Form.Label style = {{fontSize: '10px', whiteSpace: 'nowrap'}}>Week Start Time:</Form.Label>
                   </div>
                   <div className="py-1 px-2 left ">
-                    <div className="w-100">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
                       <Form.Control type="text" />
                     </div>
                   </div>
-                </div>
+                  </div>
 
-                <div className="inner_ d-flex">
-                  <div className="right w-25">
-                    <Form.Label>Address2:</Form.Label>
+                  
+
+                  <div className="right" style={{ width: "25%" }}>
+                    <Form.Label>Day:</Form.Label>
                   </div>
                   <div className="py-1 px-2 left ">
-                    <div className="w-100">
-                      <Form.Control type="text" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="inner_ d-flex">
-                  <div className="right w-25">
-                    <Form.Label>City:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left ">
-                    <div className="w-25">
-                      <Form.Control type="text" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="inner_ d-flex">
-                  <div className="right w-25">
-                    <Form.Label>State:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left ">
-                    <div className="w-50">
-                      <Form.Select>
-                        <option>Alberta</option>
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                    <Form.Select>
+                        <option></option>
                         <option>Disable Option</option>
                         <option>Disable Option</option>
                         <option>Disable Option</option>
                       </Form.Select>
                     </div>
                   </div>
-                </div>
-
-                <div   className="inner_ d-flex">
-                  <div className="right w-25">
-                    <Form.Label>Zip:</Form.Label>
-                  </div>
-                  <div className="py-1 px-2 left ">
-                    <div className="w-25">
-                      <Form.Control type="text" />
                     </div>
                   </div>
                 </div>
-                {/* <Form.Label>Set Value to zero (0) to disable enforcement of a password policy</Form.Label> */}
+
+                <div className="inner_ d-flex">
+                  <div className="right" style={{ width: "10%" , display: 'contents'}}>
+                  <div className="w-100" style={{display: 'block', borderRight: '1px solid darkgray'}}>
+                  <Form.Label style = {{fontSize: '8px', whiteSpace: 'nowrap'}}>Weekend Start Time:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                    </div>
+                  </div>
+                  </div>
+
+                  
+
+                  <div className="right" style={{ width: "25%" }}>
+                    <Form.Label>Day:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                    <Form.Select>
+                        <option></option>
+                        <option>Disable Option</option>
+                        <option>Disable Option</option>
+                        <option>Disable Option</option>
+                      </Form.Select>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="inner_ d-flex">
+                  <div className="right" style={{ width: "10%" , display: 'contents'}}>
+                  <div className="w-100" style={{display: 'block', borderRight: '1px solid darkgray'}}>
+                  <Form.Label style = {{fontSize: '8px', whiteSpace: 'nowrap'}}>Weekend End Time:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                    </div>
+                  </div>
+                  </div>
+
+                  <div className="right" style={{ width: "25%" }}>
+                    <Form.Label>Day:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                    <Form.Select>
+                        <option></option>
+                        <option>Disable Option</option>
+                        <option>Disable Option</option>
+                        <option>Disable Option</option>
+                      </Form.Select>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+
+                <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
+                <div className="general_div">
+                  <Form.Label
+                    className="m-0 pb-1"
+                    style={{ display: "flex", alignItems: "center", justifyContent: 'space-between' }}
+                  >
+                    Splits
+                  </Form.Label>
+                  <div className="py-1 px-2">
+                      <div style = {{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
+                        <div className="div_1" style = {{display: 'flex' ,alignItems: 'center'}}>
+                          <Form.Check type = "checkbox"/>
+                          <p style = {{fontSize: '9px'}}>Split Shifts</p>
+                        </div>
+                        <div className="div_2" style = {{display: 'flex' ,alignItems: 'center'}}>
+                          <Form.Check type = "checkbox"/>
+                          <p style = {{fontSize: '9px'}}>Split Weekends</p>
+                        </div>
+                        <div className = "div_3" style = {{display: 'flex' ,alignItems: 'center'}}>
+                          <Form.Check type = "checkbox"/>
+                          <p style = {{fontSize: '9px'}}>Split Holidays</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </Form.Group>
+                
+              </Form.Group>
+            </div>
+          </Form>
+        </Col>
+    
+
+      </Row>
+
+      
+
+      <Row>
+        <Col md = {12}>
+        <Form className="reference_form">
+            <div className="tab_form policy">
+              <Form.Group className="tab_form_" controlId="formBasicText">
+              <Form.Label className="m-0 pb-1">
+                  Pay Modifiers Clients Defaults
+                </Form.Label>
+
+                <div className="inner_ d-flex">
+                  <div className="right" style={{ width: "10%" , display: 'contents'}}>
+                  <div className="w-100" style={{display: 'block', borderRight: '1px solid darkgray'}}>
+                    <Form.Label>OT:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                    </div>
+                    </div>
+                  </div>
+
+                  <div className="right" style={{ width: "10%" }}>
+                    <Form.Label>DBL:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                    </div>
+                  </div>
+                  </div>
+
+                  <div className="right" style={{ width: "10%" }}>
+                    <Form.Label>Holiday:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+
+                  <div className="right" style={{ width: "10%" }}>
+                    <Form.Label>Max:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </Form.Group>
+
+              <Form.Group className="mb-3 tab_form_" controlId="formBasicText">
+                <Form.Label className="m-0 pb-1">
+                  Bill Modifiers Clients Defaults
+                </Form.Label>
+
+                <div className="inner_ d-flex">
+                  <div className="right" style={{ width: "10%" , display: 'contents'}}>
+                  <div className="w-100" style={{display: 'block', borderRight: '1px solid darkgray'}}>
+                    <Form.Label>OT:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                    </div>
+                    </div>
+                  </div>
+
+                  <div className="right" style={{ width: "10%" }}>
+                    <Form.Label>DBL:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                    </div>
+                  </div>
+                  </div>
+
+                  <div className="right" style={{ width: "10%" }}>
+                    <Form.Label>Holiday:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+
+                  <div className="right" style={{ width: "10%" }}>
+                    <Form.Label>Max:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                    </div>
+                    </div>
+                  </div>
+                </div>
               </Form.Group>
             </div>
           </Form>
         </Col>
       </Row>
+
+      <Row>
+        <Col md = {6}>
+        <Form className="reference_form">
+            <div className="tab_form policy">
+            <Form.Group className="tab_form_" controlId="formBasicText">
+                <Form.Label className="m-0 pb-1">
+                  Faculty Cancel Defaults
+                </Form.Label>
+
+                <div className="inner_ d-flex">
+                  <div className="right" style={{ width: "10%" , display: 'contents'}}>
+                  <div className="w-100" style={{display: 'block', borderRight: '1px solid darkgray'}}>
+                  <Form.Label>DBL:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                      hours
+                    </div>
+                  </div>
+                  </div>
+
+                  
+
+                  <div className="right" style={{ width: "25%" }}>
+                    <Form.Label>Holiday:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                      hours
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+              </Form.Group>
+            </div>
+          </Form>
+        </Col>
+
+        <Col md = {6}>
+        <Form className="reference_form">
+            <div className="tab_form policy">
+            <Form.Group className="tab_form_" controlId="formBasicText">
+                <Form.Label className="m-0 pb-1">
+                  Agency Cancel Defaults
+                </Form.Label>
+
+                <div className="inner_ d-flex">
+                  <div className="right" style={{ width: "10%" , display: 'contents'}}>
+                  <div className="w-100" style={{display: 'block', borderRight: '1px solid darkgray'}}>
+                  <Form.Label>DBL:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                      hours
+                    </div>
+                  </div>
+                  </div>
+
+                  
+
+                  <div className="right" style={{ width: "25%" }}>
+                    <Form.Label>Holiday:</Form.Label>
+                  </div>
+                  <div className="py-1 px-2 left ">
+                    <div className="py-1 px-2 left ">
+                    <div className="w-28">
+                      <Form.Control type="text" />
+                      <p>+</p>
+                      $<Form.Control type="text" />
+                      hours
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+              </Form.Group>
+            </div>
+          </Form>
+        </Col>
+      </Row>
+
     </Container>
   );
 }

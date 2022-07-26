@@ -145,7 +145,6 @@ function Navv() {
                 >
                     <Nav.Link href="/allBranches" className='py-1 px-3'><i class="fa-solid fa-square-plus"></i>  New </Nav.Link>
                     <Nav.Link href="#action2" className='py-1 px-3'><i class="fa-solid fa-pen-to-square"></i> Edit</Nav.Link>
-                    <Nav.Link href="/branchTable" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
                 </Nav>
 
             </Container>

@@ -68,9 +68,8 @@ function Navv() {
                     className=" my-2 my-lg-0 d-flex align-items-center "
                     navbarScroll
                 >
-                    <Nav.Link href="/allBranches" className='py-1 px-3'><i className="fa-solid fa-users"></i>  New </Nav.Link>
-                    <Nav.Link href="#action2" className='py-1 px-3'><i className="fa-solid fa-users"></i> Edit</Nav.Link>
-                    <Nav.Link href="/branchTable" className='py-1 px-3'><i className="fa-solid fa-users"></i> Save</Nav.Link>
+                    <Nav.Link href="/branchTable" className='py-1 px-3'><i class="fa-solid fa-floppy-disk"></i> Save</Nav.Link>
+                    <Nav.Link href="/branchTable" className='py-1 px-3'><i class="fa-solid fa-xmark"></i> cancel</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

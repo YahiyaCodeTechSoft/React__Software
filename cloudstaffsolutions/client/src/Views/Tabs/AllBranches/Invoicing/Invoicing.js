@@ -106,13 +106,11 @@ function Invoicing() {
               <Form.Group className="tab_form_" controlId="formBasicText">
                 <Form.Label className="m-0 pb-1">Remittance Information</Form.Label>
                 <div className="inner_">
-                  <FloatingLabel controlId="floatingTextarea2" label="">
                     <Form.Control
                       as="textarea"
-                      placeholder="Leave a comment here"
+                      placeholder=""
                       style={{ height: '100px' }}
                     />
-                  </FloatingLabel>
                 </div>
                 {/* <Form.Label>Set Value to zero (0) to disable enforcement of a password policy</Form.Label> */}
               </Form.Group>
